@@ -1,0 +1,22 @@
+.bordo{
+    background-color: rgb(231, 231, 135);
+    color: rgb(17, 121, 121);
+
+}
+div span{
+    color: red;
+}
+.blu{
+    color: blue;
+    text-decoration: underline;
+}
+p span{
+    font-size: 1.1em;
+}
+.centrare{
+    position: absolute;
+    left: 25%;
+}
+.testo{
+    text-align: center;
+}
