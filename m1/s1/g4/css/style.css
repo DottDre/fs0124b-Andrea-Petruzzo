@@ -1,0 +1,16 @@
+#margine{
+    margin: 15px;
+}
+
+#sfondo{
+    background-image: url(../img/sfondo.png);
+}
+.bordo{
+    background-color: rgb(8, 136, 156);
+    text-align: center;
+    padding: auto;
+    box-sizing: border-box;
+}
+.bordo2{
+    background-color: white;
+}
