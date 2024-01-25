@@ -1,16 +1,52 @@
-#margine{
-    margin: 15px;
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
+    margin: 20px;
 }
 
-#sfondo{
-    background-image: url(../img/sfondo.png);
-}
-.bordo{
-    background-color: rgb(8, 136, 156);
+#header{
+    background: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    padding: 30px 0;
+    margin-bottom: 15px;
     text-align: center;
-    padding: auto;
-    box-sizing: border-box;
+    color: #fff;
 }
-.bordo2{
-    background-color: white;
+
+.logo{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.titolo{
+    margin-bottom: 20px;
+}
+#menu a{
+    color: #fff;
+    text-decoration: none;
+}
+#menu a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#menu a::before{
+    content:"⇒ ";
+}
+#menu a::after{
+    content:" ⇐";
+}
+#menu li{
+    margin-bottom: 10px;
+}
+.main{
+    background: #fff;
+}
+.main{
+    margin-bottom: 20p;
+}
+.titolo1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 4;
+    
 }
