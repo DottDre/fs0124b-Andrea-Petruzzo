@@ -40,13 +40,26 @@ body{
 }
 .main{
     background: #fff;
-}
-.main{
     margin-bottom: 20p;
+    line-height: 1.5;
 }
 .titolo1{
     font-size: 20px;
     font-weight: 700;
     line-height: 4;
-    
 }
+.paragrafo{
+    margin-bottom: 20px;
+}
+ul{
+    list-style-type: disc;
+}
+ol{
+    list-style-type: decimal;
+    margin: auto;
+}
+
+p span{
+    color: rgb(219, 18, 135);
+}
+
