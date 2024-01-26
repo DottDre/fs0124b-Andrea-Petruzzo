@@ -49,8 +49,9 @@ body{
     padding-top: 10px;
 }
 #img{
-    width: 350px ;
+    width: 280px ;
     border-radius: 50%;
+    padding: 100px;
     }
 .div2 {
     display: grid;
@@ -66,7 +67,12 @@ body{
     grid-column: 2 / 4;
     grid-row: 1 / 3;
     font-size: small;
-    padding: 80px 160px 52px 75px;;
+    padding: 80px 160px 52px 75px;
+}
+#sezione{
+    background-color: #e22d0e;
+    color: white;
+    text-align: center;
 }
 
 
