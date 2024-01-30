@@ -4,7 +4,7 @@
 
 let n1 = 8
 let n2 = 10
-if(n1 < n2){ 
+if(n1 < n2 ){ 
       console.log('è più grande');
 }
 
@@ -75,25 +75,26 @@ if (sconto > 50) {
 let v1 = 15
 let v2 = 11
 let v3 = 20
-if (v1 >= v2 && v1 >= v3){
-  if(v2 >= v3){
-     console.log(v1,v2,v3);
-   }else{
-     console.log(v1,v3,v2);
-   }
-  }else if (v2 >= v1 && v2 >= v3) {
-    if (v1 >= v3) {
-      console.log(v2,v1,v3);
-    }else{
-      console.log(v2,v3,v1)
-    }
-  } else{
-    if(v1 >= v2){
-      console.log(v3,v1,v2)
-    }
-  }else{
+if (v1 >= v2 && v1 >= v3) {
+  if (v2 >= v3) {
+    console.log(v1,v2,v3);
+  } else {
+    console.log(v1,v3,v2);
+  }
+} else if (v2 >= v1 && v2 >= v3) {
+  if (a >= c) {
+    console.log(v2,v1,v3);
+  } else {
+    console.log(v2,v3,v1);
+  }
+} else {
+  if (v1 >= v2) {
+    console.log(v3,v1,v2);
+  } else {
     console.log(v3,v2,v1);
   }
+}
+  
 
  
 
