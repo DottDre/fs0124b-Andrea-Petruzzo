@@ -72,16 +72,37 @@ if (sconto > 50) {
   Alla fine mostra il risultato in console.
 */
 
-let v1 = 20
+let v1 = 15
 let v2 = 11
-let v3 = 10
+let v3 = 20
+if (v1 >= v2 && v1 >= v3){
+  if(v2 >= v3){
+     console.log(v1,v2,v3);
+   }else{
+     console.log(v1,v3,v2);
+   }
+  }else if (v2 >= v1 && v2 >= v3) {
+    if (v1 >= v3) {
+      console.log(v2,v1,v3);
+    }else{
+      console.log(v2,v3,v1)
+    }
+  } else{
+    if(v1 >= v2){
+      console.log(v3,v1,v2)
+    }
+  }else{
+    console.log(v3,v2,v1);
+  }
+
+ 
 
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
