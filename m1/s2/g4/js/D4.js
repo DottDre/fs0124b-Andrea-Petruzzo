@@ -13,14 +13,14 @@ console.log(area(6,7));
  la loro somma moltiplicata per tre.
 */
 
-function crazySum(a=10, b=20) {
+function crazySum(a, b) {
     if (a === b) {
        return (a + b) *3
     }else {
         return a + b
     }
 }
-console.log(crazySum());
+console.log(crazySum(20, 20));
 
 
 /* ESERCIZIO 3
@@ -28,25 +28,29 @@ console.log(crazySum());
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-function crazyDiff(a = 40, b=19) {
-    return Math.abs(a-b)
+function crazyDiff(a) {
+    if (a > 19) {
+        return Math.abs(a - 19)*3
+    }else{
+        return Math.abs(a-19)
 }
-console.log(crazyDiff())
+}
+console.log(crazyDiff(10))
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
 function boundary(n) {
-    if ( n >= 20 && n <= 100) {
+    if ( n >= 20 && n <= 100 || n === 400) {
         return true
-    }if (n == 400) {
-        return true
-    } else {
-        return false
-}
+    }else{
+    return false
 } 
-console.log(boundary(400));    
+}
+console.log(boundary(300));    
+    
+    
 
 
 /* ESERCIZIO 5
@@ -76,13 +80,13 @@ function check3and7(a) {
         return false
     }
 }
-console.log(check3and7(12));
+console.log(check3and7(16));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-function reverseString(a=""){
+function reverseString(a){
     return a.split("").reverse().join("");
 }
 console.log(reverseString("epicode"));
@@ -93,7 +97,7 @@ console.log(reverseString("epicode"));
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-function upperFirst(a="") {
+function upperFirst(a) {
     
 }
 
@@ -104,13 +108,19 @@ function upperFirst(a="") {
 */
 
 
-function cutString(a='') {
-    
+function cutString(a) {
+    return a.slice(1, a.length -1)
 }
+console.log(cutString('EPICODE'))
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 function giveMeRandom(n) {
-    
+    let lista = []
+    for (let i = 0; i < n; i++) {
+      lista.push(Math.floor(Math.random() * 10))
+    }
+    return lista
 }
+console.log(giveMeRandom(5))
