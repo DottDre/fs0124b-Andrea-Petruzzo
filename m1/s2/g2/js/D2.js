@@ -2,12 +2,15 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-let n1 = 8
+let n1 = 13
 let n2 = 10
 if(n1 < n2 ){ 
-      console.log('è più grande');
+      console.log('n2 è più grande');
+}else if(n1 > n2){
+    console.log('n1 è più grande')
+}else{
+    console.log('sono uguali')
 }
-
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -102,14 +105,24 @@ if (v1 >= v2 && v1 >= v3) {
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
-
+let = '10'
+if (typeof let === 'number') {
+   console.log('è un numero')
+  }else{
+    console.log('non è un numero');
+  }
 
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+ let n3 = 45
+ if (n3 % 2 ===0) {
+    console.log('è pari')
+ } else {
+    console.log('non è pari')
+ }
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -123,7 +136,14 @@ if (v1 >= v2 && v1 >= v3) {
     }
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7
+if (val < 5) {
+    console.log("Meno di 5");
+  } else if (val < 10) {
+    console.log("Meno di 10");
+  } else {
+    console.log("Uguale a 10 o maggiore");
+  }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -134,29 +154,44 @@ const me = {
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
+me.city='toronto'
+console.log(me);;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName
+console.log(me)
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.skills.pop()
+console.log(me)
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let Array = []
+Array.push(1)
+Array.push(2)
+Array.push(3)
+Array.push(4)
+Array.push(5)
+Array.push(6)
+Array.push(7)
+Array.push(8)
+Array.push(9)
+Array.push(10)
+console.log(Array)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+Array[9]=100
+console.log(Array)
