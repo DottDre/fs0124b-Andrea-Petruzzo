@@ -55,14 +55,14 @@ console.log(boundary(400));
  ritornare la stringa originale senza alterarla.
 */
 
-function epify(a='EPICODE') {
+function epify(a) {
     if (a === 'EPICODE') {
         return a
     }else{
         return 'EPICODE' + a
 }
 }
-console.log(epify())
+console.log(epify('EPICODE'))
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
