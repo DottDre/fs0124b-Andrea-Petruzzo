@@ -121,9 +121,10 @@ console.log(charactersNames)
 */
 let femaleCharacters = []
 for(let i = 0; i < starWarsCharacters.length; i++){
-    
-  
-  femaleCharacters.push(starWarsCharacters[i].name)
+   let femminili = starWarsCharacters[i]
+   if (femminili.gender === 'female') {
+      femaleCharacters.push(femminili.name)
+   }
 }
   
   console.log(femaleCharacters);
@@ -137,20 +138,48 @@ let eyeColor = {
   yellow: [],
   brown:[],
   red:[],
-  blue_gray:[],
+  'blue-gray':[],
 }
 /* ESERCIZIO 5
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
-let seletOcchi = document.getElementsByName(starWarsCharacters)
+for(let i = 0; i < starWarsCharacters.length; i++){
+  let occhi = starWarsCharacters[i]
+  switch (occhi.eye_color){
+    case 'blue':
+      eyeColor.blue.push(occhi)
+    break
+    case 'yellow':
+      eyeColor.yellow.push(occhi)
+    break;
+    case 'brown':
+      eyeColor.brown.push(occhi)
+    break;
+    case 'red':
+      eyeColor.red.push(occhi)
+    break;
+    case 'blue-gray':
+      eyeColor["blue-gray"].push(occhi)
+    break;
+  }
+}
+    console.log(eyeColor)
+    
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
 
+let i = 0
+let massa = 0
 
-
+while (i < starWarsCharacters.length) {
+  let totale = starWarsCharacters[i]
+  massa = massa + parseInt(totale.mass)
+  i++
+}
+console.log(massa)
 
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
@@ -167,6 +196,15 @@ let seletOcchi = document.getElementsByName(starWarsCharacters)
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+for (let i = 0; i < starWarsCharacters.length; i++) {
+    let robot = starWarsCharacters [i];
+    if (robot.gender === 'n/a') {
+      robot.gender = 'robot'
+    }
+  
+}
+console.log(starWarsCharacters);
+
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
