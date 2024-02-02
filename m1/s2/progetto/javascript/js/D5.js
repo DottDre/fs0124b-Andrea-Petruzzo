@@ -175,6 +175,8 @@ case 'v': posizione.push(20)
 break 
 case 'z': posizione.push(21) 
 break 
-default: break } }
+default: break 
+} 
+}
 
 console.log(posizione)
