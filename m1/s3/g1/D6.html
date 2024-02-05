@@ -56,12 +56,12 @@
 
       <a href="https://epicode.com/it/">Questo link porta al sito di Epicode</a>
 
-      <div class="mioDiv">
+      <div>
         <p>Questo testo è un placeholder per gli esercizi</p>
       </div>
     </div>
 
-    <div class="mioDiv">
+    <div>
       <p>Anche questo testo è per gli esercizi</p>
       <h2 id="changeMyColor" style="color: #ff00d6">
         Apri questa pagina con VSCode per scoprire gli esercizi
@@ -84,11 +84,12 @@
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
 
-      const titolo = document.getElementById()
+
       const changeTitle = function () {
-        
+        let titolo = document.querySelector('h1')
+        titolo.innerText= 'nuovo titolo'
       }
-      
+      changeTitle()
       
 
 
@@ -96,20 +97,25 @@
        Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
     */
 
-      const addClassToTitle = function () {}
+      const addClassToTitle = function () {
+        let titolo = document.querySelector('h1')
+        titolo.classList.add('myHeading')
+      }
+      
+      addClassToTitle()
 
       /* ESERCIZIO 3
        Scrivi una funzione che cambi il testo dei p figli di un div
       */
 
-      const changePcontent = function cambiaTestoP() {
-        let div = document.getElementsByClassName('mioDiv');
-        let paragrafi = div.getElementsByTagName('p');
-        for(var i = 0; i < paragrafi.length; i++) {
-          paragrafi[i].textContent = "Nuovo testo del paragrafo " + (i+1);
+      const changePcontent = function (){
+        let p = document.querySelectorAll('div p')
+        for (let i = 0; i < p.length; i++) {
+          const cambio = p[i];
+          cambio.innerText = 'testo nuovo'
         }
       }
-
+      changePcontent()
 
      
 
@@ -119,13 +125,28 @@
        Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
       */
 
-      const changeUrls = function () {}
+      const changeUrls = function () {
+        let url = document.querySelectorAll('a:not(footer a)')
+        for (let i = 0; i < url.length; i++) {
+          const link = url[i];
+          link.href= 'https://www.google.com'
+          
+        }
+      }
+      changeUrls()
 
       /* ESERCIZIO 5
        Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
     */
 
-      const addToTheSecond = function () {}
+      const addToTheSecond = function () {
+        let nuovo = document.getElementById('secondList')
+        let li = document.createElement('li')
+        nuovo.append(li)
+        
+      }
+      addToTheSecond()
+      
 
       /* ESERCIZIO 6
        Scrivi una funzione che aggiunga un paragrafo al primo div
