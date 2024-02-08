@@ -12,7 +12,6 @@ let array = Array.from({length:90},(_,i)=> i+1)
 let btn = document.querySelector(".bottone")
 function numeroEstrazione() {
     if (array.length > 0) {
-            
         let a = Math.floor(Math.random() * array.length)
         let estratto = array[a]
         array.splice(a, 1)
@@ -34,4 +33,5 @@ btn.addEventListener('click', ()=>{
     })
 }
 )
+    
             
