@@ -6,21 +6,32 @@ let tombola = document.querySelector(".tombola");
         cella.innerText = i
         tombola.appendChild(cella)
 }
-//console.log(tombola)
+console.log(tombola)
 
+let array = Array.from({length:90},(_,i)=> i+1)
 let btn = document.querySelector(".bottone")
 function numeroEstrazione() {
-     let a = Math.floor(Math.random() * 89)+1
-     return a
-    
-}
-//console.log(numeroEstrazione())
-btn.addEventListener('click', ()=>{
-    let b = numeroEstrazione()
-    selectcella(b)
+    if (array.length > 0) {
+            
+        let a = Math.floor(Math.random() * array.length)
+        let estratto = array[a]
+        array.splice(a, 1)
+        return estratto
+    }else{
+        return null
     }
+}
+let celle = document.querySelectorAll('.tabella')
+console.log(numeroEstrazione())
+btn.addEventListener('click', ()=>{
+    let b = 0 
+    b = numeroEstrazione()
+    console.log(b)
+    celle.forEach(cella => {
+        if (parseInt(cella.innerText) === b) {
+            cella.classList.add('tabella-selezionato')
+        }
+    })
+}
 )
-
-
-
-//console.log(b)
+            
