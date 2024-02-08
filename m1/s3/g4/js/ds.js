@@ -21,7 +21,6 @@ function numeroEstrazione() {
     }
 }
 let celle = document.querySelectorAll('.tabella')
-console.log(numeroEstrazione())
 btn.addEventListener('click', ()=>{
     let b = 0 
     b = numeroEstrazione()
