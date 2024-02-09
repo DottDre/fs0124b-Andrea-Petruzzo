@@ -47,7 +47,8 @@ me.skills.push(newSkills)
 //console.log(me)
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
-*/me.skills.pop()
+*/
+me.skills.pop()
 //console.log(me)
 
 // Funzioni
@@ -102,7 +103,7 @@ function deleteOne(a , b) {
 function onlyLetters (a) {
    return a.replace(/[0-9]/g,'')
 }
-//console.log(onlyLetters('io avevo 3 cani e 1 gatti'))
+console.log(onlyLetters('io avevo 3 cani e 1 gatti'))
 
 
   
@@ -161,24 +162,26 @@ function rollTheDices(a) {
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
-function howManyDays(a) {
-  let oggi = new Date()
-  let differenza = Math.abs(oggi.getTime() - a.getTime())
-  let differenza2 = Math.floor(differenza / (1000 * 3600 * 24))
-  return differenza2
+function howManyDays() {
+  let oggi = new Date();
+  let a = new Date('2024-01-01')
+  let differenza = oggi - a;
+  let giorni = Math.floor(differenza / (1000 * 60 * 60 * 24));
+  return giorni;
 }
+//console.log(howManyDays())
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 function isTodayMyBirthday() {
   let oggi = new Date()
-  let comp = new Date('1997-01-31')
+  let comp = new Date('2024-01-01')
   if (oggi.getMonth === comp.getMonth && oggi.getDay === comp.getDay ) {
     return true
   }else 
     return false
   }
-  //console.log(isTodayMyBirthday())
+  //console.log(isTodayMyBirthday()) non mi viene ho provato mille modi diversi o mi da sempre true o mi da sempre false
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
@@ -464,6 +467,12 @@ function rimuoviLi() {
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+function aggiungiClasseTR() {
+  let tr = document.getElementsByTagName("tr");
+  for(let i = 0; i < tr.length; i++) {
+    tr[i].classList.add("test");
+  }
+}
 
 // [EXTRA] JS Avanzato
 
