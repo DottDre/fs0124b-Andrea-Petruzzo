@@ -154,7 +154,7 @@ function rollTheDices(a) {
     risultato.values.push(value)
   }
 
-  return risultato;
+  return risultato
 }
 //console.log(rollTheDices(3))
     
@@ -163,11 +163,11 @@ function rollTheDices(a) {
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
 function howManyDays() {
-  let oggi = new Date();
+  let oggi = new Date()
   let a = new Date('2024-01-01')
-  let differenza = oggi - a;
-  let giorni = Math.floor(differenza / (1000 * 60 * 60 * 24));
-  return giorni;
+  let differenza = oggi - a
+  let giorni = Math.floor(differenza / (1000 * 60 * 60 * 24))
+  return giorni
 }
 //console.log(howManyDays())
 /* ESERCIZIO 10
