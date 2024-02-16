@@ -1,0 +1,533 @@
+body {
+    background-color: rgb(17, 17, 42);
+    font-size: 16px;
+    color: #fff;
+}
+
+.container {
+    font-family: "Inter", sans-serif;
+}
+
+.logo {
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.contentWelcome {
+    margin: 2em;
+}
+
+.titleWelcome {
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    width: 200px;
+    line-height: 0.8em;
+    margin-bottom: 0.7em;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.subtitle {
+    color: #d20094;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.paragraph {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: left;
+}
+
+.list {
+    margin-bottom: 2em
+}
+
+.sublist {
+    padding: 0.2em;
+    list-style: inside;
+}
+
+.btn {
+    background-color: #00ffff;
+    border: none;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 0.5em 2em;
+    margin-top: 3em;
+}
+
+.btn:active,
+.btn:hover {
+    box-shadow: 0 0 20px 1px #00ffff;
+}
+
+.checkbox-wrapper {
+    position: relative;
+    margin-bottom: 12px;
+    margin-top: 11px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.checkbox-wrapper .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 3px solid white;
+    transform: translateY(0.4em);
+}
+
+.checkbox-wrapper .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+
+.checkbox-wrapper input:checked~.checkmark::after {
+    display: block;
+}
+
+.visto {
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+
+/*------WELCOME PAGE COMPLETE------*/
+
+
+.question {
+    text-align: center;
+    margin-top: 6em;
+}
+
+.titleBenchmark {
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+}
+
+.risposte {
+    margin-top: 1em;
+}
+
+#question-container {
+    text-align: center;
+}
+
+#answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonBenchmark {
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 0em;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    padding-top: 2.6em;
+    padding-bottom: 2.6em;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.buttonBenchmark:active {
+    background: linear-gradient(180deg, #d20094, rgb(26, 26, 26));
+}
+
+.buttonBenchmark:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.titolo-question {
+    display: inline;
+    text-align: center;
+    margin-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.avanzamento {
+    text-align: center;
+    margin-top: 1em;
+    font-family: "Inter", sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.num-avanzamento,
+.fisso-avanzamento {
+    display: inline;
+    color: #d20094;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.num-avanzamento {
+    color: white;
+}
+
+/*-----BENCHMARK COMPLETE-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TIMER CSS */
+.timerContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em
+}
+
+.timer {
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0px 0px 30px 4px rgba(32, 27, 27, 0.4);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    /* centrare il timer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 30px 4px rgba(32, 27, 27, 0.4),
+        0.5px 0.5px 0 rgba(0, 0, 0, 0.15);
+    /* centrare i p ed il timer in verticale */
+    flex-direction: column;
+    text-transform: uppercase;
+    /* --------------------- */
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.inner>p {
+    font-family: "Outfit", sans-serif;
+}
+
+.number {
+    font-size: 40px;
+    font-weight: 600px;
+    color: white;
+}
+
+.circleTimer {
+    fill: none;
+    stroke: #00ffff;
+    stroke-width: 17px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 65s linear forwards;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+.circleTimer2 {
+    fill: none;
+    stroke: grey;
+    stroke-width: 17px;
+}
+
+.svgTimer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*TIMER COMPLETE*/
+
+
+#title {
+    font-family: "Outfit";
+    margin-top: 1.8rem;
+    text-align: center;
+    color: #e7e7eb;
+}
+
+#title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#title h3 {
+    margin: 0.7rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/************************ MAIN ************************/
+
+#main {
+    display:block;
+    margin-top: 3rem;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+/************************ CORRECT/WRONG ************************/
+
+.container-correct {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.container-wrong {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.contenitore{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;   
+}
+
+.item-correct-text {
+    text-align: left;
+    margin-left: 1em;
+}
+
+.item-wrong-text {
+    text-align: right;
+    margin-right: 1em;
+}
+
+.item-correct-text h3,
+.item-wrong-text h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+}
+
+.item-correct-text h4,
+.item-wrong-text h4 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+}
+
+.item-correct-text #number-question-correct,
+.item-wrong-text #number-question-wrong {
+    font-size: 1.3rem;
+    font-family: "Outfit";
+}
+
+/************************ CIRCLE ************************/
+
+.item-circle {
+    text-align: center;
+
+    border-radius: 100%;
+}
+
+.container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    border: 50px solid #00ffff;
+    border-radius: 100%;
+
+    height: 300px;
+    width: 300px;
+
+    box-shadow: rgba(17, 17, 26, 0.4) 0px 8px 24px,
+        rgba(17, 17, 26, 0.4) 0px 16px 56px, rgba(17, 17, 26, 0.4) 0px 24px 80px;
+}
+
+.item-circle h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+.item-circle h5 {
+    color: #00ffff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.item-circle p {
+    font-size: 1rem;
+    padding: 1.5rem 0.5rem;
+}
+
+.btnResult {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.btnResult button {
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-weight: bold;
+    border: 3px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnResult button:hover {
+    box-shadow: rgba(170, 160, 192, 0.2) 0px 7px 29px 0px;
+}
+
+/* CIRCLE */
+
+.container-circle {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin-left: 2.8em;
+}
+
+.item-circle {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.text-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    display: flex;
+    flex-direction: column;
+}
+
+.text-circle p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/*-----RESULT COMPLETE-----*/
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-bold {
+    text-align: center;
+    margin-bottom: 0.6em;
+    margin-top: 2em;
+}
+
+.paragraph-feedbackp {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.feedbackp {
+    font-family: "Outfit", sans-serif;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.star {
+    padding-left: 0.8em;
+    cursor: pointer;
+    opacity: 0.2;
+    width: 35px;
+    height: auto;
+}
+
+.star.active {
+    opacity: 1;
+}
+
+.rates {
+    margin-top: 4em;
+}
+
+.comment-box {
+    margin-top: 5em;
+}
+
+.comment {
+    margin-bottom: 2.5em;
+}
+
+.comment-feedbackp {
+    font-size: 24px;
+    margin-bottom: 2em;
+}
+
+.text-comment {
+    background-color: transparent;
+    padding-bottom: 0.8em;
+    border: none;
+    border-bottom: 2px solid #d20094;
+    margin-bottom: 5em;
+    width: 300px;
+    padding-left: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    outline: none;
+    color: white;
+}

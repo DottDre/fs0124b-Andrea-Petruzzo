@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/cssCompleto.css" />
+  </head>
+  <body>
+    <template id="template1">
+      <div class="container">
+        <div class="header">
+          <div class="container-logo">
+            <img class="logo" src="./assets/epicode_logo.png" />
+          </div>
+        </div>
+
+        <div>
+          <div class="contentWelcome">
+            <h2 class="titleWelcome">
+              Welcome to <span class="bold"> your exam</span>
+            </h2>
+            <h3 class="subtitle">Instructions</h3>
+            <p class="paragraph">
+              We don't expect most engineers to know the answers to all of these
+              questions, so don't worry if you're unsure of a few of them.
+            </p>
+
+            <div class="list">
+              <ul>
+                <li class="sublist">
+                  Each question is <span class="bold">timed</span> and can only
+                  be answerd once.
+                </li>
+                <li class="sublist">
+                  Changing browser tab or opening other windows will
+                  <span class="bold">invalidate the question.</span>
+                </li>
+                <li class="sublist">
+                  This exam will take approx.
+                  <span class="bold">0-5 minutes.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="checkbox">
+              <label
+                class="checkbox-wrapper visto checkmark"
+                for="templateCheckbox"
+              >
+                <input id="templateCheckbox" type="checkbox" />
+                <span class="checkmark"></span> I promise to answer my self
+                without help from anyone
+              </label>
+              <div class="bottone">
+                <button class="btn switchButton">proceed</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="template2">
+      <div class="container">
+        <div class="container-logo">
+          <div>
+            <img class="logo" src="./assets/epicode_logo.png" />
+          </div>
+          <div class="timerContainer">
+            <div class="timer">
+              <div class="svg">
+                <!-- <svg class="svgTimer" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="red" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle class="circleTimer2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                  <circle class="circleTimer" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="question-container" class="question">
+          <h2 class="titleBenchmark"></h2>
+        </div>
+
+        <div id="answer-buttons" class="btn-grid risposte"></div>
+        <div id="questionNumber"></div>
+      </div>
+    </template>
+
+    <template id="template3">
+      <div class="container">
+        <div class="logo">
+          <img src="assets/epicode_logo.png" alt="logo" class="logo" />
+        </div>
+
+        <div>
+          <div id="title">
+            <h2>Results</h2>
+            <h3>The summary of your answers:</h3>
+          </div>
+
+          <div id="main">
+            <div class="container-correct">
+              <div class="item-correct-text">
+                <h3>Correct</h3>
+                <h4 id="statistics-correct"></h4>
+                <p id="number-question-correct"></p>
+              </div>
+            </div>
+
+            <div class="container-circle">
+              <div class="item-circle">
+                <canvas
+                  id="myChart"
+                  width="400"
+                  height="400"
+                  style="
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    display: block;
+                    box-sizing: border-box;
+                    height: 500px;
+                    width: 500px;
+                  "
+                ></canvas>
+                <div class="text-circle">
+                  <h6>Congratulations</h6>
+                  <h5>You passed the exam</h5>
+                  <p>
+                    we'll send you the certificate in few minutes. Check your
+                    email (invluding promotions / spam folder)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-wrong">
+              <div class="item-wrong-text">
+                <h3>Wrong</h3>
+                <h4 id="statistics-wrong"></h4>
+                <p id="number-question-wrong"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="btnResult">
+            <button class="btnResult switchButton">RATE US</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="template4">
+      <div class="container">
+        <div class="container-logo">
+          <img class="logo" src="./assets/epicode_logo.png" alt="logo" />
+        </div>
+        <div class="content">
+          <h2 class="title-bold">Tell us show it's going</h2>
+          <p class="paragraph-feedbackp">
+            From 0 to 10, how likely are you to recommend EPICODE <br />
+            to a friend or a colleague?
+          </p>
+
+          <div class="rates">
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+            <img class="star" src="./assets/star.svg" alt="star" />
+          </div>
+          <div class="comment-box">
+            <p class="comment feedbackp">
+              Leave us an open feeedback about your experience so far
+            </p>
+            <input
+              class="text-comment"
+              type="text"
+              placeholder="Write yuor comment here"
+            />
+          </div>
+          <a href="https://www.youtube.com/watch?v=QnWzUvJeWjA"
+            ><button class="btn">More info</button></a
+          >
+        </div>
+      </div>
+    </template>
+
+    <div id="template-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="JS/circle.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
