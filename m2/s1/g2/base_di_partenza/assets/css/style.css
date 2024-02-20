@@ -337,8 +337,15 @@ aside div {
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
   padding: 1em;
+  position: relative;
 }
-
+aside div .fas.fa-tag{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 60px;
+  opacity: 0.3;
+}
 @media screen and (min-width: 1200px) {
   aside div {
     display: inline-block;
@@ -351,16 +358,7 @@ aside div p:last-child {
   font-size: 0.8em;
   text-align: right;
 }
-/*ICONE*/
-.relative-tag{      
-  position: relative;
-}
-.fa-tag {
-  font-size: 80px;
-  opacity: 0.3;
-  position: absolute;
-  right: 0;
-}
+
  
 
 
