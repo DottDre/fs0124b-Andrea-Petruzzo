@@ -352,7 +352,7 @@ aside div p:last-child {
   text-align: right;
 }
 /*ICONE*/
-.relative-tag{
+.relative-tag{      
   position: relative;
 }
 .fa-tag {
@@ -360,14 +360,9 @@ aside div p:last-child {
   opacity: 0.3;
   position: absolute;
   right: 0;
-  top: 20px;
 }
-.fa-tag:nth-of-type(2){
-  left: 0;
-}
-.fa-tag:nth-of-type(3){
-  left: 0;
-}
+ 
+
 
 
 
