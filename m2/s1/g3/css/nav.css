@@ -1,0 +1,33 @@
+header {
+    background-color:  #FBF7E3;
+    margin: 10px;
+   border-radius: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+header img {
+    width: 30px;
+    padding-right: 10px;
+}
+    
+.ancora{
+    text-decoration: none;
+    color: #612406;
+    background-color:#F3DF85;
+    padding: 10px  10px ;
+    border-radius: 30px;
+    margin: auto;
+    
+}    
+#ancora2 {
+    display:flex;
+    align-items: center;
+    
+}
