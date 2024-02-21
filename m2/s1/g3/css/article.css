@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    background-color:  #FBF7E3;
+    padding: 20px;
+    margin: 10px 20px;
+}
+
+.testo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #612406;
+    padding-left: 10px;
+}
