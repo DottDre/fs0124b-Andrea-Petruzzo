@@ -84,7 +84,6 @@ h2 {
     flex-direction: column;
     gap: 50px;
     margin-left: 5.5rem;
-    position: relative;
 }
 .container-scroll h3 {
     font-weight: bold;
@@ -98,9 +97,19 @@ h2 {
     text-decoration: none;
     color: black;
 }
-.container-scroll img {
+.position-relative {
     position: relative;
+    display: flex;
+    
+}
+.container-scroll img {
+    width: 200px;
+    
     right: 0;
+    top: 0;
+    z-index: -1;
+    
+    
 }
     
 
