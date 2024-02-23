@@ -1,13 +1,27 @@
+
 /*HEADER*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+}
 .header{
-    padding: 1.5rem;
+    padding: 15px;
     background-color: #FFC017;
     border-bottom: 2px solid black;
+    width: 100%;
+    transition: background-color 1s, white 1s;
+    
+}
+header img {
+    margin-left: 4rem;
 }
 .container-header{
     display: flex;
     justify-content: space-between;
-    
+    margin-right: 65px;
+   
 }
 .navbar {
     display: flex;
@@ -22,15 +36,17 @@
     border-radius: 30px;
     background-color: black;
     color: white;
-    padding: 15px;
+    padding: 10px 16px;
     font-size: 13px;
     font-weight: bold;
+    border: none;
 }  
 /*MAIN TITLE*/
 .conteiner-title {
     display: flex;
     justify-content: center;
     background-color: #FFC017;
+    
 }
 .title {
     display: flex;
@@ -38,7 +54,8 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 50px;
+    gap: 30px;
+    margin-left: 3.5rem
 }
 .title h1 {
     font-size: 110px;
@@ -47,36 +64,74 @@
 .title p {
     font-size: 30px;
 }
+.black {
+    padding: 9px 58px;
+    font-size: 20px;
+}
 /*MAIN TRENDING*/
-h2 {
-    font-weight: bold;
+
+.trending {
     display: flex;
     align-items: center;
-    margin-top: 3rem;
     margin-left: 5.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .container-trending {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    width: 1000px;
+    gap: 89px;
+    align-content: stretch;
+    margin-left: 70px;
     
     
 }
+.numero {
+    display: flex;
+}
+.img-text {
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: center
+}
+.container-trending img {
+    width: 20px;
+}
 .container-trending h2 {
-    opacity: 0.2;
+    font-weight: bold;
+    opacity: 0.1;
+    font-size: 40px;
+    text-align: center;
+}
+.container-trending a {
+    text-decoration: none;
+    color: black;
+}
+.container-trending h3{
+    font-weight: bold;
+    padding-top: 10px;
+}
+.container-trending p {
+    opacity: 0.4;
+    padding-top: 10px;
 }
 /*container all*/
 .container-all {
     display: flex;
     justify-content: space-evenly;
     gap: 15px;
+    margin-top: 100px;
 }
 .container-discover-see-footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 25px;
+   
 }
 /* container scroll*/
 .container-scroll {
@@ -104,15 +159,55 @@ h2 {
 }
 .container-scroll img {
     width: 200px;
-    
     right: 0;
     top: 0;
     z-index: -1;
-    
-    
 }
     
+/*discover*/
+.container-discover h3 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}  
+.container-discover a {
+    text-decoration: none;
+    color: black;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+.discover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:20px
+}
+.container-discover{
+    width: 400px;
+    margin-right: 100px;
+    text-align: center;
+}
+/*see more*/
+.see-more a {
+    text-decoration: none;
+    color: green;
+    margin-top: 2rem;
+}  
+/*footer*/
+.footer a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    width: 350px;
 
+}
 
     
 
