@@ -114,10 +114,12 @@ header img {
 .container-trending h3{
     font-weight: bold;
     padding-top: 10px;
+    margin-left: 38px;
 }
 .container-trending p {
     opacity: 0.4;
     padding-top: 10px;
+    margin-left: 38px;
 }
 /*container all*/
 .container-all {
