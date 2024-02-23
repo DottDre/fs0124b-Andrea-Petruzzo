@@ -131,6 +131,10 @@ header img {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 25px;
+    position: sticky;
+    height: fit-content;
+    top: 100px;
+    
    
 }
 /* container scroll*/
