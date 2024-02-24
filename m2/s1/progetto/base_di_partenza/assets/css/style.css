@@ -3,7 +3,7 @@
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 9999;
     
 }
 .header{
@@ -13,14 +13,12 @@ header {
     transition: background-color 1s, white 1s;
     
 }
-header img {
-    margin-left: 4rem;
-}
+
 .container-header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-   
+    margin: 0 3rem 0 3rem;
 }
 .navbar {
     display: flex;
@@ -45,7 +43,6 @@ header img {
     display: flex;
     justify-content: center;
     background-color: #FFC017;
-    
 }
 .title {
     display: flex;
@@ -53,47 +50,51 @@ header img {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 30px;
-    margin-left: 3.5rem
+    gap: 50px;
+    margin-left: 4rem
 }
-.title h1 {
-    font-size: 110px;
-    font-weight: 500;
+    
+    
+.title h2 {
+    font-size: 130px;
+    font-weight: 400;
+    letter-spacing: -0.5rem;
+    line-height: 95px;
 }
 .title p {
     font-size: 30px;
+    padding-right: 207px;
 }
 .black {
     padding: 9px 58px;
     font-size: 20px;
 }
 /*MAIN TRENDING*/
-
+.container-article{
+    margin-left: 5.5rem;
+}
 .trending {
     display: flex;
     align-items: center;
-    margin-left: 5.5rem;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .container-trending {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
-    width: 1000px;
-    gap: 89px;
-    align-content: stretch;
-    margin-left:7rem;
-    
-    
-    
+    gap: 20px;
+   
 }
+    
 .numero {
     display: flex;
     align-items: baseline;
     gap: 20px;
 }
+
 .img-text {
     display: flex;
     position: relative;
@@ -123,6 +124,7 @@ header img {
     padding-top: 10px;
     
 }
+
 
 .tooltip{
     display: none;
@@ -173,7 +175,7 @@ header img {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    margin-left: 5.5rem;
+    
 }
 .container-scroll h3 {
     font-weight: bold;
@@ -190,6 +192,8 @@ header img {
 .position-relative {
     position: relative;
     display: flex;
+    gap: 25px;
+    width: 680px;
     
 }
 .container-scroll img {
@@ -220,7 +224,7 @@ header img {
 }
 .container-discover{
     width: 400px;
-    text-align: center;
+
 }
 /*see more*/
 .see-more a {
@@ -240,7 +244,7 @@ header img {
     justify-content: space-between;
     gap: 25px;
     width: 350px;
-
+    margin-top: 45px;
 }
 
     
