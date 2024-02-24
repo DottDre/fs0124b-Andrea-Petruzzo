@@ -7,7 +7,7 @@ header {
     
 }
 .header{
-    padding: 15px;
+    padding: 28px;
     background-color: #FFC017;
     border-bottom: 2px solid black;
     width: 100%;
@@ -85,16 +85,19 @@ header img {
     width: 1000px;
     gap: 89px;
     align-content: stretch;
-    margin-left: 70px;
+    margin-left:7rem;
+    
     
     
 }
 .numero {
     display: flex;
+    align-items: baseline;
+    gap: 20px;
 }
 .img-text {
     display: flex;
-    
+    position: relative;
     flex-wrap: wrap;
     align-items: center
 }
@@ -114,12 +117,40 @@ header img {
 .container-trending h3{
     font-weight: bold;
     padding-top: 10px;
-    margin-left: 38px;
+    
 }
 .container-trending p {
     opacity: 0.4;
     padding-top: 10px;
-    margin-left: 38px;
+    
+}
+
+.tooltip{
+    display: none;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    box-shadow: 1px 1px 1px 1px  gray;
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    box-shadow: 1px 1px 1px 1px  gray;
+    background-color: white;
+    position: absolute;
+    left: -8px;
+    bottom: 100px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+}
+.tooltip-wrap:hover .tooltip {
+    display: block;
+    position: absolute;
+    right: -100%;
+   
+    
 }
 /*container all*/
 .container-all {
@@ -136,8 +167,7 @@ header img {
     position: sticky;
     height: fit-content;
     top: 100px;
-    
-   
+    margin-left: 3rem;
 }
 /* container scroll*/
 .container-scroll {
