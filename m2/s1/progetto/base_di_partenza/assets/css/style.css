@@ -10,7 +10,6 @@ header {
     padding: 28px;
     background-color: #FFC017;
     border-bottom: 2px solid black;
-    width: 100%;
     transition: background-color 1s, white 1s;
     
 }
@@ -20,7 +19,7 @@ header img {
 .container-header{
     display: flex;
     justify-content: space-between;
-    margin-right: 65px;
+    flex-wrap: wrap;
    
 }
 .navbar {
@@ -221,7 +220,6 @@ header img {
 }
 .container-discover{
     width: 400px;
-    margin-right: 100px;
     text-align: center;
 }
 /*see more*/
