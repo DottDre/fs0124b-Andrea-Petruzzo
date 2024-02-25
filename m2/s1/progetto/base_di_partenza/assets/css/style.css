@@ -40,6 +40,7 @@ header {
     font-size: 13px;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }  
 /*MAIN TITLE*/
 .conteiner-title {
