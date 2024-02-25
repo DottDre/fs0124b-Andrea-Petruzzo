@@ -1,4 +1,7 @@
-
+/* ho lavorato dal sito a 1240 perche ho avuto problemi con il secondo schermo*/
+body {
+    font-family: "Roboto", sans-serif;;
+}
 /*HEADER*/
 header {
     position: sticky;
@@ -43,6 +46,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: #FFC017;
+    font-family:  "Spectral", serif;
 }
 .title {
     display: flex;
@@ -72,6 +76,7 @@ header {
 /*MAIN TRENDING*/
 .container-article{
     margin-left: 5.5rem;
+    
 }
 .trending {
     display: flex;
@@ -85,15 +90,22 @@ header {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
-   
+    gap: 60px;
+  
 }
-    
+ .container-trending img {
+    border-radius: 30px;
+    width: 20px;
+}   
+   
 .numero {
     display: flex;
     align-items: baseline;
     gap: 20px;
+    width: 400px;
+    
 }
+   
 
 .img-text {
     display: flex;
@@ -101,9 +113,7 @@ header {
     flex-wrap: wrap;
     align-items: center
 }
-.container-trending img {
-    width: 20px;
-}
+
 .container-trending h2 {
     font-weight: bold;
     opacity: 0.1;
@@ -113,6 +123,8 @@ header {
 .container-trending a {
     text-decoration: none;
     color: black;
+    font-size: 13px;
+    padding-left: 10px;
 }
 .container-trending h3{
     font-weight: bold;
@@ -125,15 +137,17 @@ header {
     
 }
 
-
 .tooltip{
     display: none;
     background-color: white;
     width: 300px;
     height: 200px;
     box-shadow: 1px 1px 1px 1px  gray;
-    z-index: 1;
+    z-index: 2;
+    position: relative;
+    
 }
+
 
 .tooltip::before {
     content: '';
@@ -145,13 +159,28 @@ header {
     width: 15px;
     height: 15px;
     transform: rotate(45deg);
+    z-index: 1;
+  
 }
 .tooltip-wrap:hover .tooltip {
     display: block;
     position: absolute;
     right: -100%;
-   
-    
+}
+.tooltip-text {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 20px;
+    align-items: baseline;
+}
+.tooltip-text button {
+    background-color: green;
+    color: white;
+}
+.tooltip-text-img {
+    display: flex;
+    align-items: baseline;
 }
 /*container all*/
 .container-all {
@@ -167,7 +196,7 @@ header {
     gap: 25px;
     position: sticky;
     height: fit-content;
-    top: 100px;
+    top: 130px;
     margin-left: 3rem;
 }
 /* container scroll*/
@@ -197,11 +226,18 @@ header {
     
 }
 .container-scroll img {
-    width: 200px;
+    width: 35%;
     right: 0;
     top: 0;
-    z-index: -1;
 }
+.img-left img {
+    border-radius: 30px;
+    width: 25px;
+}
+.img-left p{
+    padding-top: 8px;
+}
+    
     
 /*discover*/
 .container-discover h3 {
@@ -249,8 +285,3 @@ header {
 
     
 
-
-    
-
-
-    
