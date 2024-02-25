@@ -76,7 +76,7 @@ header {
 }
 /*MAIN TRENDING*/
 .container-article{
-    margin-left: 5.5rem;
+    margin-left: 4rem;
     
 }
 .trending {
@@ -90,8 +90,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
-    gap: 60px;
+    align-items: flex-start;
+    gap: 10px;
   
 }
  .container-trending img {
@@ -103,7 +103,7 @@ header {
     display: flex;
     align-items: baseline;
     gap: 20px;
-    width: 400px;
+    width: 360px;
     
 }
    
@@ -205,7 +205,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    
+    margin-left: 2.5rem;
 }
 .container-scroll h3 {
     font-weight: bold;
