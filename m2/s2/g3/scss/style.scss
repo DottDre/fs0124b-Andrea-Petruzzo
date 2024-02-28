@@ -60,7 +60,5 @@ button {
     }
 }
 .aside {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 70px;
+    @include aside
 }

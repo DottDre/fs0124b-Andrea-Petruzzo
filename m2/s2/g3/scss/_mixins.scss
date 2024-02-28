@@ -23,4 +23,9 @@
     bottom: -50px;
     border-radius: 5px;
 }
+@mixin aside {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
 
