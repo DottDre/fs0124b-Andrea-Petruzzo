@@ -1,0 +1,19 @@
+@mixin flex {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding-top: 25px ;
+}
+@mixin flex2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center
+}
+
+@mixin container{
+    width: 1190px;
+    margin: 0 auto;
+    height: 100%;
+}

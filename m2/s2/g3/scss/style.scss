@@ -1,0 +1,61 @@
+@import 'reset';
+@import 'colori';
+@import 'font';
+@import 'spaziature';
+@import 'bottoni';
+@import 'mixins';
+@import 'animazioni';
+.bg {
+    background-color: map-get($colori, bgColor )
+}
+header{
+    height: 70px;
+}
+.container{
+   @include container
+}
+ul{
+    li{
+        a{
+            text-decoration: none;
+            color: map-get($colori, textColor )
+        }
+    }
+}
+.flex {
+   @include flex
+}
+.flex2 {
+    @include flex2
+}
+h1 {
+    font-size: $titolo;
+    font-weight: bold;
+    padding-right: 300px;
+}
+p {
+    color: map-get($colori, textColor );
+    padding-right: 100px
+}
+button {
+    @include bottoni;
+}
+.a {
+    background-color: map-get($colori , primary);
+}
+.b {
+    background-color: map-get($colori , secondary);
+}
+.c {
+    background-color: map-get($colori , terzo);
+}
+.aside{
+    img{
+        width: calc(100% / 4 - 20px);
+    }
+}
+.aside {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
