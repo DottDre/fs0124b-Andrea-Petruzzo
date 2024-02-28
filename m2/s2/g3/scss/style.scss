@@ -33,9 +33,7 @@ ul{
 }
     
 h1 {
-    font-size: $titolo;
-    font-weight: bold;
-    padding-right: 200px;
+    @include font
 }
 p {
     color: map-get($colori, textColor );
