@@ -28,14 +28,18 @@ ul{
 .flex2 {
     @include flex2
 }
+.img-main{
+    @include img
+}
+    
 h1 {
     font-size: $titolo;
     font-weight: bold;
-    padding-right: 300px;
+    padding-right: 200px;
 }
 p {
     color: map-get($colori, textColor );
-    padding-right: 100px
+    padding-right: 50px
 }
 button {
     @include bottoni;
@@ -52,6 +56,7 @@ button {
 .aside{
     img{
         width: calc(100% / 4 - 20px);
+        border-radius: 5px;
     }
 }
 .aside {

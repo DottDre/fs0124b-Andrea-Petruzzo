@@ -17,3 +17,10 @@
     margin: 0 auto;
     height: 100%;
 }
+@mixin img {
+    width: calc(100% / 2);
+    position: relative;
+    bottom: -50px;
+    border-radius: 5px;
+}
+

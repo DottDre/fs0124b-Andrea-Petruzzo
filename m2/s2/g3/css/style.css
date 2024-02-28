@@ -86,15 +86,22 @@ ul li a {
   justify-content: center;
 }
 
+.img-main {
+  width: 50%;
+  position: relative;
+  bottom: -50px;
+  border-radius: 5px;
+}
+
 h1 {
   font-size: 60px;
   font-weight: bold;
-  padding-right: 300px;
+  padding-right: 200px;
 }
 
 p {
   color: #f4f4f4;
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
 button {
@@ -117,6 +124,7 @@ button {
 
 .aside img {
   width: calc(25% - 20px);
+  border-radius: 5px;
 }
 
 .aside {
