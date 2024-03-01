@@ -11865,6 +11865,9 @@ body {
 .row .col-6 img {
   width: 100%;
 }
+.row .col-6 img img:hover {
+  width: 110%;
+}
 
 .category:hover {
   background-color: rgb(104, 100, 100);
