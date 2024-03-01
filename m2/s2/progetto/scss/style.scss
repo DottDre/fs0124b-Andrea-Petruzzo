@@ -2,6 +2,9 @@ $primary: #141414;
 $danger: white;
 $secondary: rgb(104, 100, 100);
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+body {
+    background-color: $primary;
+}
 .icone {
     i {
         font-size: 30px;
@@ -17,3 +20,19 @@ $secondary: rgb(104, 100, 100);
         }
     }
     }
+.category:hover{
+    background-color: $secondary;
+}
+.logo {
+    width: 100px
+}
+.img-profile{
+    width: 90%;
+}
+.bg-btn {
+    border-radius: 0;
+.bg-btn:hover{
+    background-color: $danger;
+    color: $primary;
+}
+}

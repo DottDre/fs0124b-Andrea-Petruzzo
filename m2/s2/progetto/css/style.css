@@ -11844,6 +11844,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: #141414;
+}
+
 .icone i {
   font-size: 30px;
   padding: 0 10px;
@@ -11855,6 +11859,26 @@ textarea.form-control-lg {
 }
 .row .col-6 img {
   width: 100%;
+}
+
+.category:hover {
+  background-color: rgb(104, 100, 100);
+}
+
+.logo {
+  width: 100px;
+}
+
+.img-profile {
+  width: 90%;
+}
+
+.bg-btn {
+  border-radius: 0;
+}
+.bg-btn .bg-btn:hover {
+  background-color: white;
+  color: #141414;
 }
 
 /*# sourceMappingURL=style.css.map */
