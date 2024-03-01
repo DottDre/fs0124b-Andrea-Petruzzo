@@ -1,0 +1,19 @@
+$primary: #141414;
+$danger: white;
+$secondary: rgb(104, 100, 100);
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+.icone {
+    i {
+        font-size: 30px;
+        padding: 0 10px;
+        color:$secondary
+    }
+}
+.row {
+    .col-6{
+        padding: 0 2px;
+        img{
+            width: 100%;
+        }
+    }
+    }
