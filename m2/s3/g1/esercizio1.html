@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+        class User {
+            constructor(first, last, age, location){
+                this.firstName = first
+                this.lastName = last
+                this.age = age
+                this.location = location
+            }
+            confrontaEtà(utente){
+               let età = utente.age
+               if (età >= this.age) {
+                 return `L'età di ${utente.firstName} è maggiore o uguale a quella di ${this.firstName}`
+               } else
+                 return  `L'età di ${utente.firstName} è minore di quella di ${this.firstName}`
+            }
+        }
+        let utente1 = new User ('mario','rossi', 34, 'roma')
+        let utente2 = new User ('andrea', 'petruzzo', 27, 'milano')
+        console.table([utente1,utente2])
+        console.log(utente1.confrontaEtà(utente2))
+    }
+
+
+    </script>
+</body>
+</html>
