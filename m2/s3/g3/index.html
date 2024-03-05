@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Registrazione</h1>
+    <form>
+      <strong>Ultimo nome: </strong
+      ><span id="ultimo-nome">Nessun nome inserito</span>
+      <br />
+      <br />
+      <label for="nome">Nome utente</label>
+      <input id="nome" type="text" placeholder="Inserisci il nome"/>
+      <button type="button" id="btn-salva">Salva</button>
+      <button type="button" id="btn-rimuovi">Rimuovi</button>
+    </form>
+    
+
+    <script>
+      const btnSalva = document.querySelector("#btn-salva");
+      const btnRimuovi = document.querySelector("#btn-rimuovi");
+      let ultimoNome = document.querySelector("#ultimo-nome");
+
+      btnSalva.addEventListener("click", function (e) {
+        e.preventDefault();
+        let name = document.getElementById("nome").value;
+        localStorage.setItem("name", name);
+        ultimoNome.innerText = localStorage.getItem("name");
+        document.getElementById("nome").value = "";
+        
+      });
+
+      btnRimuovi.addEventListener("click", function (e) {
+        e.preventDefault();
+        localStorage.clear();
+        
+      });
+    </script>
+  </body>
+</html>
