@@ -39,7 +39,7 @@ fetch("https://striveschool-api.herokuapp.com/books")
     cardBody.appendChild(prezzo);
 
     let btn = document.createElement("a");
-    btn.classList.add("btn", "btn-danger");
+    btn.classList.add("btn", "btn-danger",);
     btn.innerText = "Scarta";
     cardBody.appendChild(btn);
 
