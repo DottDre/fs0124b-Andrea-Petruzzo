@@ -10,16 +10,18 @@ async function chiamata(query){
         }
     }).then(rep => rep.json())
 }
-      let btn = document.querySelector(".btn");
+  
+      let btn = document.querySelector('.btn');
       btn.addEventListener("click", () => {
-        chiamata("donne").then((dati) => {
-          console.log(dati);
-          let img = document.querySelectorAll(".card-img-top");
-          dati.photos.forEach((photo, i) => {
-              img[i].src = photo.src.medium;
+          chiamata("donne").then((dati) => {
+              console.log(dati);
+              let img = document.querySelectorAll(".card-img-top");
+              dati.photos.forEach((photo, i) => {
+                  img[i].src = photo.src.medium;
+                });
             });
         });
-      });
+    
         
 
-
+c
