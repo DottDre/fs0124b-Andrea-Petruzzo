@@ -14,9 +14,9 @@ async function chiamata(query){
       btn.addEventListener("click", () => {
         chiamata("donne").then((dati) => {
           console.log(dati);
-          let immagini = document.querySelectorAll(".card-img-top");
+          let img = document.querySelectorAll(".card-img-top");
           dati.photos.forEach((photo, i) => {
-              immagini[i].src = photo.src.medium;
+              img[i].src = photo.src.medium;
             });
         });
       });
