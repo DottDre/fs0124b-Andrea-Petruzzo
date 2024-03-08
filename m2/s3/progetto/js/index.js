@@ -16,19 +16,22 @@ fetch("https://striveschool-api.herokuapp.com/api/product/",{
         console.dir(colonna)
         
         let title = colonna.querySelector('.card-title')
-        title.textContent = phone.name
+        title.innerText = phone.name
 
         let brand = colonna.querySelector('.card-brand')
-        brand.textContent = phone.brand
+        brand.innerText = phone.brand
 
         let price = colonna.querySelector('.card-price')
-        price.textContent = phone.price
+        price.innerText = phone.price
 
         let description = colonna.querySelector('.card-description')
-        description.textContent = phone.description
+        description.innerText = phone.description
 
         let image = colonna.querySelector('.card-img-top')
         image.src = phone.imageUrl
+
+        let editbtn = colonna.querySelector('#editbtn')
+        editbtn.href = `edit.html?id=${phone._id}`
 
         
 
