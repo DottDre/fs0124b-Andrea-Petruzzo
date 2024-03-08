@@ -63,7 +63,8 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
     }
 })
 let eliminaBtn = document.querySelector('#elimina')
-eliminaBtn.addEventListener('click', () => {
+eliminaBtn.addEventListener('click', (e) => {
+    e.preventDefault()
     fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
                 method:'DELETE',
                 headers:{
