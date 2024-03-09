@@ -1,3 +1,4 @@
+const apyKey = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZGEzYjJkN2IxMTAwMTkwZTZkZWYiLCJpYXQiOjE3MDk4OTAxMDcsImV4cCI6MTcxMTA5OTcwN30.zsDD5gyVPTazmEJrT1GPgji7WoRLj4nP93cUIwb1q3w"
 let url = new URLSearchParams(location.search)
 let id = url.get('id')
 console.log(id)
@@ -5,7 +6,7 @@ console.log(id)
 fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
     headers: {
         'Content-type':'application/json',
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZGEzYjJkN2IxMTAwMTkwZTZkZWYiLCJpYXQiOjE3MDk4OTAxMDcsImV4cCI6MTcxMTA5OTcwN30.zsDD5gyVPTazmEJrT1GPgji7WoRLj4nP93cUIwb1q3w"
+        Authorization: apyKey
     },
 })
 .then(res => res.json())
@@ -45,7 +46,7 @@ salvaBtn.addEventListener('click', (e) => {
                 method:'PUT',
                 headers:{
                     'Content-type':'application/json',
-                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZGEzYjJkN2IxMTAwMTkwZTZkZWYiLCJpYXQiOjE3MDk4OTAxMDcsImV4cCI6MTcxMTA5OTcwN30.zsDD5gyVPTazmEJrT1GPgji7WoRLj4nP93cUIwb1q3w"
+                    Authorization: apyKey
                 },
                 body:JSON.stringify(phone)
             })
@@ -54,14 +55,6 @@ salvaBtn.addEventListener('click', (e) => {
                 location.href = 'index.html'
             })
 }) 
-fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
-    method:'DELETE',
-    headers: {
-        'Content-Type':'application/json',
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZGEzYjJkN2IxMTAwMTkwZTZkZWYiLCJpYXQiOjE3MDk4OTAxMDcsImV4cCI6MTcxMTA5OTcwN30.zsDD5gyVPTazmEJrT1GPgji7WoRLj4nP93cUIwb1q3w"
-
-    }
-})
 let eliminaBtn = document.querySelector('#elimina')
 eliminaBtn.addEventListener('click', (e) => {
     e.preventDefault()
@@ -69,7 +62,7 @@ eliminaBtn.addEventListener('click', (e) => {
                 method:'DELETE',
                 headers:{
                     'Content-type':'application/json',
-                    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZTcyMTJkN2IxMTAwMTkwZTZmMTQiLCJpYXQiOjE3MDk4OTM0MDksImV4cCI6MTcxMTEwMzAwOX0.HZkeQ2N6C9nMLUq1ZoUdGC9k-Za4JnzyHVzNQGXD0Pw"
+                    Authorization: apyKey
                 }
             })
             .then(res => res.json())

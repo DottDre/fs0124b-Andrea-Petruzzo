@@ -1,7 +1,10 @@
+const apyKey = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZGEzYjJkN2IxMTAwMTkwZTZkZWYiLCJpYXQiOjE3MDk4OTAxMDcsImV4cCI6MTcxMTA5OTcwN30.zsDD5gyVPTazmEJrT1GPgji7WoRLj4nP93cUIwb1q3w"
+
+
 fetch("https://striveschool-api.herokuapp.com/api/product/",{
     headers: {
         'Content-type':'application/json',
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWVhZGEzYjJkN2IxMTAwMTkwZTZkZWYiLCJpYXQiOjE3MDk4OTAxMDcsImV4cCI6MTcxMTA5OTcwN30.zsDD5gyVPTazmEJrT1GPgji7WoRLj4nP93cUIwb1q3w "
+        Authorization: apyKey
     },
 
 })
@@ -33,7 +36,8 @@ fetch("https://striveschool-api.herokuapp.com/api/product/",{
         let editbtn = colonna.querySelector('#editbtn')
         editbtn.href = `edit.html?id=${phone._id}`
 
-        
+        let desbtn = colonna.querySelector('#description-btn')
+        desbtn.href = `description.html?id=${phone._id}`
 
 
         console.log(title);
