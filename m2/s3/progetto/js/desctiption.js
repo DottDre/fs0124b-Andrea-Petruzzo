@@ -17,7 +17,7 @@ fetch(`https://striveschool-api.herokuapp.com/api/product/${id}`,{
     let brand = document.querySelector('#brand')
     brand.innerText = phone.brand
     let price = document.querySelector('#prezzo')
-    price.innerText = phone.price
+    price.innerText = phone.price + '$'
     let description = document.querySelector('#descrizione')
     description.innerText = phone.description
     let img = document.querySelector('#image')

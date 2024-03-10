@@ -25,7 +25,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/",{
         brand.innerText = phone.brand
 
         let price = colonna.querySelector('.card-price')
-        price.innerText = phone.price
+        price.innerText = phone.price + '$'
 
         let description = colonna.querySelector('.card-description')
         description.innerText = phone.description
