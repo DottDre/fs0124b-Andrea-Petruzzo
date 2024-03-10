@@ -6,7 +6,7 @@ salva.addEventListener('click',function(e){
     let nome = document.querySelector('#nome').value
     let brand = document.querySelector('#brand').value
     let image = document.querySelector('#image').value
-    let prezzo = document.querySelector('#prezzo').value
+    let prezzo = document.querySelector('#prezzo').value 
     let description = document.querySelector('#description').value
 
     let cell = {
