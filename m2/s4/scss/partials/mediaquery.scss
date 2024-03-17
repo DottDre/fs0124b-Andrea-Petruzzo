@@ -1,0 +1,143 @@
+@media  screen and (max-width: 1024px) {
+  .friend {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  .centralDiv .progress-bar {
+      width: 550px;
+  }
+  .rightDiv .progress-bar {
+      width: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .centralDiv .progress-bar {
+      width: 320px;
+  }
+  .rightDiv .progress-bar {
+      width: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+
+      .sticky-nav-icons {
+        display: none;
+      }
+      .sidebar{
+        display: none;
+      }
+      .leftDiv2{
+        display: none;
+      }
+      
+      .progress-container{
+        display: none;
+      }
+      .dis-none{
+        display: none;
+      }
+      .rightDiv a i{
+        font-size: 40px;
+        position: absolute;
+        left: 66%;
+        top: 14%;
+        margin: 1%;
+    }
+    .leftDiv a{
+        position: absolute;
+        font-size: 40px;
+        left: 77%;
+        top: 15%;
+        margin: 1%;
+        margin-right: 2%;
+    }
+    
+    .centralDiv a{
+        font-size: 40px;
+        position: absolute;
+        left: 86%;
+        top: 15%;
+        margin: 1%;
+    }
+      #player{
+          background-color: #232323;
+          flex-direction: column;
+          border-radius: 25px;
+          display: flex;
+          padding: 1%;
+          height: 9vh;
+          position: fixed;
+          left: 0;
+          z-index: 20;
+          bottom: 73px;
+          border-radius: 0; 
+      }
+      div{
+          display: block;
+      }
+      .leftDiv{
+          flex-direction: column;
+          flex-grow: 1;
+          max-height: 90px;
+          max-width: 50%;
+          
+      }
+      .leftDiv h2 {
+          margin-top: 25px;
+          font-size: 20px;
+          position: relative;
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
+          animation: scrollText 6s linear infinite;
+        }
+        
+        @keyframes scrollText {
+          0% {
+            transform: translateX(25%);
+            opacity: 0;
+          }
+          30%{
+              opacity: 1;
+          }
+          100% {
+            transform: translateX(-120%);
+          }
+        }
+
+  }
+
+  @media screen and (max-width: 430px){
+      .rightDiv a i, .leftDiv a, .centralDiv a i {
+          font-size: 20px;
+          top: 38%;
+      }
+      .leftDiv h2{
+          font-size: 14px;
+          margin-top: 30px;
+      }
+      
+  }
+
+
+
+
+
+
+
+//.music-player {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  z-index: 10000;
+//  background-color: #000000;
+//  position: fixed;
+//  bottom: 0;
+//  width: 100%;
+//  height: 82px;
+//}

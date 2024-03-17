@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.navbar-login{
+    background-color: #000;
+    padding: 30px 0 30px 51px ;
+}
+
+#navbar-logo{
+    width: 120px;
+}
+
+.box-container-login{
+    background: linear-gradient(rgba(40, 40, 40, 1) 0%, rgb(0, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-container-login .main-login{
+    margin: 32px 0;
+    padding: 32px;
+    width: 734px;
+    height: 910px;
+    background: #121212;
+    border-radius: 5px;
+}
+
+.h2-login{
+    text-align: center;
+    margin: 48px 0;
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.box-container-login .main-login .account-connect-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.a-c-btn-login{
+    display: flex;
+    justify-content: flex-start;
+    width: 324px;
+    text-align: center;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    border-radius: 50px;
+    color: #f2f2f2;
+    background: transparent;
+    border: 1px solid #878787; 
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.a-c-btn-login:hover{
+    opacity: 1;
+}
+
+.a-c-btn-login .icon-login{
+    width: 25px;
+    margin: 0 10px;
+}
+
+.hr-login{
+    margin: 32px 100px;
+    border-right: none ;
+    border-bottom: none;
+    border-left: none;
+    border-image: initial;
+    border-top: 1px solid #878787;
+}
+
+.log-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-login{
+    position: relative;
+}
+
+.log-in .form-login .label-login{
+    color: #f2f2f2;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.log-in .form-login .input-login{
+    display: block;
+    padding: 14px;
+    width: 320px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #121212;
+    outline: none;
+    border: none;
+    appearance: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px #878787;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.icon-password{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 125px;
+    color: #f2f2f2;
+}
+
+
+.log-in .form-login .input-login:hover{
+    opacity: 1;
+}
+
+.switch-login{
+    margin: 0;
+    padding: 0;
+}
+
+.switch-login input[type="checkbox"]{
+   height: 0;
+   width: 0;
+   visibility: hidden;
+}
+.switch-login .switch-label-login{
+    margin-left: 10px 0px 20px 0px;
+    cursor: pointer;
+    padding: 5px;
+    width: 32px;
+    height: 16px;
+    background: #878787;
+    display: block;
+    border-radius: 50em;
+    position: relative;
+    transition: .1s;
+    box-sizing: border-box;
+}
+
+.switch-login .switch-label-login::after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    transition: .1s;
+    box-sizing: border-box;
+}
+
+.switch-login input:active+label{
+    background-color: #878787;
+
+}
+
+.switch-login input:checked+label{
+    background-color: #1ed760;   
+}
+
+.switch-login input:checked+label::after{
+    transform: translateX(calc(100% - 0px));
+}
+
+input#switch-login{
+    display: none;
+}
+
+.span-login{
+    color:#fff;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    left: 55px;
+    bottom: 17px;
+}
+
+.btn-login{
+    display: block;
+    padding: 15px 20px;
+    width: 324px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    border-radius: 50px;
+    color: #000;
+    background: #1ed760;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.btn-login:hover{
+    opacity: 1;
+}
+
+.a-login{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 30px;
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.a-login:hover{
+    opacity: 1;
+}
+
+.last-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.last-login span{
+    color: #fff;
+}
+
+.last-login a{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.last-login a:hover{
+    opacity: 1;
+}
