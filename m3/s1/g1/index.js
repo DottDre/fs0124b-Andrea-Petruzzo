@@ -39,7 +39,7 @@ console.log(user.numeroChiamate);
 user.azzeraChiamate();
 user.chiamata(3);
 user.chiamata(3);
-user.chiamata(20);
+//user.chiamata(20) credito insufficente
 console.log(user.chiamata404);
 console.log(user.numeroChiamate);
 //# sourceMappingURL=index.js.map
