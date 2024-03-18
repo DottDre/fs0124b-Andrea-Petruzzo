@@ -2,8 +2,8 @@ interface Smartphone {
     credito: number
     numeroChiamate: number
 
-    ricarica(a:number): void
-    chiamata(n:number): void
+    ricarica(a:number):void // non capisco perchè mi chiede di mettere undefined, void o any da chiedere a mike
+    chiamata(n:number):void
     get chiamata404():number 
     get getNumeroChiamata():number
     azzeraChiamate(): void
