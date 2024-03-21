@@ -1,4 +1,5 @@
 export interface article  {
+      push: any;
       id:number,
       title: string,
       body: string,

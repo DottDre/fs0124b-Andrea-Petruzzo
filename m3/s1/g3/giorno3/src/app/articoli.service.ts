@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { article } from './models/nb1';
-import { Jsoncontent } from './models/jsoncontent';
+
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +24,20 @@ export class ArticoliService {
       getInactive(){
         return this.getAllArticle()
         .then(res => res.filter(p => !p.active))
+      }
+      getRandomposts({ n, b }: { n: number; b: article[]; }): Promise<void>{
+        return this.getAllArticle()
+        .then(res =>{
+
+          for(let i = 0; i < n; i++){
+
+            let rand = Math.floor(Math.random() * res.length)
+
+            b.push( res[rand] );
+
+          }
+        })
+
       }
 
     }

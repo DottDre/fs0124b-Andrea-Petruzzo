@@ -1,6 +1,7 @@
+import { ArticoliService } from './../../articoli.service';
 import { Component } from '@angular/core';
 import { article } from '../../models/nb1';
-import { ArticoliService } from '../../articoli.service';
+
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { ArticoliService } from '../../articoli.service';
 })
 export class HomeComponent  {
     articleArr:article[] = []
-
+    postRandom:article[] = []
 
     constructor(private articoliSvc: ArticoliService){}
 
@@ -20,4 +21,10 @@ export class HomeComponent  {
       })
 
     }
+    get(){
+      this.articoliSvc.getRandomposts({ n: 4, b: this.postRandom });{}
+
+    }
+
+
 }
