@@ -10,7 +10,7 @@
   </ul>
 </div>
 <h2>Sezione 2</h2>
-<div class="card mb-3" *ngFor="let post of postRandom">
+<div class="card mb-3" *ngFor="let post of articleArr">
   <h1 class="card-header">
     {{post.title}}
   </h1>
@@ -21,5 +21,5 @@
     </ul>
   </div>
 </div>
-{{postRandom | json}}
+
 

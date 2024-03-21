@@ -10,7 +10,7 @@ import { article } from '../../models/nb1';
 })
 export class HomeComponent  {
     articleArr:article[] = []
-    postRandom:article[] = []
+
 
     constructor(private articoliSvc: ArticoliService){}
 
@@ -19,10 +19,6 @@ export class HomeComponent  {
       this.articoliSvc.getAllArticle().then(res =>{
         this.articleArr = res
       })
-
-    }
-    get(){
-      this.articoliSvc.getRandomposts({ n: 4, b: this.postRandom });{}
 
     }
 
