@@ -1,0 +1,24 @@
+<h1>Sezione 1</h1>
+<div class="card mb-5" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{articleArr[0].title}}</h5>
+    <p class="card-text">{{articleArr[0].body}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{articleArr[0].tags}}</li>
+    <li class="list-group-item">{{articleArr[0].active}}</li>
+  </ul>
+</div>
+<h2>Sezione 2</h2>
+<div class="card mb-3" *ngFor="let post of articleArr">
+  <h1 class="card-header">
+    {{post.title}}
+  </h1>
+  <div class="card-body">
+    <p class="card-text">{{post.body}}</p>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let tag of post.tags" class="list-group-item">{{tag}}</li>
+    </ul>
+  </div>
+</div>
+

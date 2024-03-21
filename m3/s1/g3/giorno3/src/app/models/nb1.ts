@@ -1,4 +1,4 @@
-export interface Nb1  {
+export interface article  {
       id:number,
       title: string,
       body: string,
