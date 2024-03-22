@@ -23,8 +23,7 @@
           <li class="list-group-item bg-black border-bottom">Prezzo: {{auto.price | currency:'EUR'}}</li>
         </ul>
         <div class="card-body">
-          <button class="btn btn-secondary">Dettagli</button>
-          <button class="btn btn-secondary ms-3">Marca</button>
+          <button routerLink="/{{auto.brand}}" class="btn btn-secondary">Mostra Marca</button>
         </div>
       </div>
     </div>

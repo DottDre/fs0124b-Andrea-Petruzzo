@@ -3,7 +3,7 @@
       "brand": "Fiat",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
       "model": "500L",
-      "modelImage": "https://www.media.stellantis.com/cache/2/5/1/b/7/251b7fb0ee4a54f37ca8cfcc65ce873e17b60824.jpeg",
+      "modelImage": "https://storage.edidomus.it/ListinoAuto/webFoto_16_9_640/90019812.jpg",
       "year": 2015,
       "price": 7500,
       "available": false
@@ -75,7 +75,7 @@
       "brand": "Audi",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
       "model": "A3",
-      "modelImage": "https://cdn-img.automoto.it/images/23780970/3000x/a208936-x750.jpeg",
+      "modelImage": "https://www.motornet.it/img/modelli/auto/AUD/A3%20SB%202020_1.jpeg",
       "year": 2012,
       "price": 4300,
       "available": true
@@ -84,7 +84,7 @@
       "brand": "Audi",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
       "model": "A1",
-      "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/anteprima_lunghezza_640/public/serie_auto_galleria/2018/09/audi_a1_sportbeck_ant.png",
+      "modelImage": "https://mediaservice.audi.com/media/cdb/data/c5b3806b-c12a-4231-9a53-7827e333d3af.jpg",
       "year": 2023,
       "price": 20000,
       "available": true

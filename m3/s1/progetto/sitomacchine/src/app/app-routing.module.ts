@@ -12,15 +12,15 @@ const routes: Routes = [
 
   },
   {
-    path:'audi',
+    path:'Audi',
     component: AudiComponent
   },
   {
-    path:'fiat',
+    path:'Fiat',
     component:FiatComponent
   },
   {
-    path:'ford',
+    path:'Ford',
     component:FordComponent
   }
 ];

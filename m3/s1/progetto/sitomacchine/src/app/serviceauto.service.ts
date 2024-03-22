@@ -27,7 +27,6 @@ export class ServiceautoService {
 
 
 
-
     getRandomposts(n: number, array:Automobili[]):Promise<Automobili[]> {
       array = [];
       return this.getAllAuto()

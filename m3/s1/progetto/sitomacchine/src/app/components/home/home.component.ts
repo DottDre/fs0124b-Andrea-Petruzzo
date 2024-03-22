@@ -23,5 +23,8 @@ export class HomeComponent {
       this.randomAutoArr = post
     })
   }
-  }
+}
+
+
+
 
