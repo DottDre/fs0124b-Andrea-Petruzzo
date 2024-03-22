@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6 text-center">
+      <img src={{fordArr[0].brandLogo}} class="img-fluid" width="400" />
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-3" *ngFor="let ford of fordArr">
+      <div class="card">
+        <img src={{ford.modelImage}} class="card-img-top" height="210">
+        <div class="card-body">
+          <h5 class="card-title">{{ford.model}}</h5>
+          <p class="card-text">{{ford.price | currency: 'EUR'}}</p>
+          <a href="#" class="btn btn-primary">verifica disponibilità</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

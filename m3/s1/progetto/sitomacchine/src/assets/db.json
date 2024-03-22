@@ -1,0 +1,110 @@
+[
+  {
+      "brand": "Fiat",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
+      "model": "500L",
+      "modelImage": "https://www.media.stellantis.com/cache/2/5/1/b/7/251b7fb0ee4a54f37ca8cfcc65ce873e17b60824.jpeg",
+      "year": 2015,
+      "price": 7500,
+      "available": false
+  },
+  {
+      "brand": "Fiat",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
+      "model": "Panda",
+      "modelImage": "https://cdn.motor1.com/images/mgl/P4kxr/s1/fiat-panda-2020.webp",
+      "year": 2019,
+      "price": 6500,
+      "available": true
+  },
+  {
+      "brand": "Fiat",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
+      "model": "Punto",
+      "modelImage": "https://www.automobilismo.it/files/articoli/1/3/5/13562/B_home.jpg",
+      "year": 2008,
+      "price": 1500,
+      "available": false
+  },
+  {
+      "brand": "Fiat",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fhttps://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
+      "model": "500 Abarth",
+      "modelImage": "https://cdn.motor1.com/images/mgl/0w8bz/s3/copertina-fiat-500-col-super-tuning-tedesco-arriva-a-404-cv.jpg",
+      "year": 2010,
+      "price": 3500,
+      "available": true
+  },
+  {
+      "brand": "Ford",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
+      "model": "Taurus",
+      "modelImage": "https://edgecast-img.yahoo.net/mysterio/api/B7D4EAA86C416C716D550BF5155AE32C3BE0D0958C37423FCDB0E2F1855E973C/autoblog/resizefill_w660_h372;quality_80;format_webp;cc_31536000;/https://s.aolcdn.com/commerce/autodata/images/USC30FOC072B021001.jpg",
+      "year": 2009,
+      "price": 5200,
+      "available": false
+  },
+  {
+      "brand": "Ford",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
+      "model": "bronco",
+      "modelImage": "https://www.fordazzurra.it/images/vehicles/4086811/0/large",
+      "year": 2010,
+      "price": 6300,
+      "available": false
+  },
+  {
+      "brand": "Ford",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
+      "model": "Fiesta",
+      "modelImage": "https://rcs.cdn.publieditor.it/w640/M1593_01.jpg",
+      "year": 2023,
+      "price": 1500,
+      "available": true
+  },
+  {
+      "brand": "Ford",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
+      "model": "Focus",
+      "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/FORD/FOCUS/40831_HATCHBACK-5-DOORS/ford-focus-active-2021-side-front.jpg",
+      "year": 2014,
+      "price": 9700,
+      "available": true
+  },
+  {
+      "brand": "Audi",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
+      "model": "A3",
+      "modelImage": "https://cdn-img.automoto.it/images/23780970/3000x/a208936-x750.jpeg",
+      "year": 2012,
+      "price": 4300,
+      "available": true
+  },
+  {
+      "brand": "Audi",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
+      "model": "A1",
+      "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/anteprima_lunghezza_640/public/serie_auto_galleria/2018/09/audi_a1_sportbeck_ant.png",
+      "year": 2023,
+      "price": 20000,
+      "available": true
+  },
+  {
+      "brand": "Audi",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
+      "model": "Q7",
+      "modelImage": "https://mediaservice.audi.com/media/fast/H4sIAAAAAAAAAC2VvaskxxHA9-75PZ9ssLGFEAoF4mE4cPX0fO0ED_mkU6TkwIcdXPConv6Y2e752O6ent2J9cc4uESZAqH_QYkTB5JTg6LD2InBNcYb9G_ro6tqq2p23v50uF384ebNm8--_M9HHxjzt_rp4XCZD4fDE9I_ffPZ23cf_vvu2esf_6---_pwGxcvpifk8urpL_oBjYLTrMyvn9wZNwl0P98vP3v18Vff_eubFz_I-_jtP75_7-_q8z__83C73_qCjic5HXd_peNn8fC_c7f8Zbd8sst3NzeHwy__QF9eH_bPr95fvJvR4_B7r8I8jaFP6je_Ezk7HnMua12jzGohi6pVBVOyOWLV1HlZCK6zmv_2cLh9J9UCGnPZhjFrs-rSQDGcUXDgjBeQFc810wzK6vkwAuKiGAIKn80eUMl6EwTPZgZohmJVhMAKculSJknZi2LRBGcSSfNMVsCgqgt5BqNwl1wZHGEwwy750i-EK7MF4CKbtSUEbCjKmip7BIEdV5IQT3xHyjYEIaZKE5wQVKCY1ixwEBFZMtDKtaZEbYe8y6Cd2vZYQjtjH3OC6BdOaE9ql2S_EtbEqXiJKhNI8DkFk6rPKYPUlIhsvc6uFSghuCkJ8RwJrRr7DNSeD0H1XTnscPVAyrmrLxxU6OuVpBAWXROi2Ri1XzIKrdVSUZ1arxn1U5uQXAa6WxPl0y4cqSF6knompe95KkEHsXScMJeOXFKoDWELmlpglG48I4yNOYKxHbsqQmInDWaYIp_BzD5fCjAej7EixNTShTCbzIBZsbpy6NAY6lmnRJV2eCx3hPJE6JGNO4ZqPBFCPg7QWWxQQhfWo7pAt0hLA--uglNJ_RiWkuBD4ThY9LboCOFsM7BCVCEQEqMtsG5jV1IO89k3hFDQOOw0GLEjlZsG64dsoyg-MJ2DDVhS8Tb0udmxWGqkXTprybalaq3AYVvaGpzociPBtfP5zMBJOZ52TIrqdAodc4TxvJFnj0cK5iyqtEPUORLautrhVLcrA6dxuMnXOzxyfSIk2klwQTWJEoXA2xLcMtTdDAOGivZskEHTzxw0NuEIg12OWwnDhD1tCM1GFhuMI-orI4x6y2DGwcwcZoM6MjibQVPx5wWR4FEWxZmwNCcE307KZ-ClramtnpYwuxBcogF4stAy-BCZ4hBQFJec0CFjhIXbAEH4YxogtF5bcmnjmXYwyK5QNQSF576CoAO3dEFvnBYzGNvMpOzFmGmCyl1J6AoaQOg35iwEi6cLSSPW7kjojjTbMI3lpYUwLzX9zOC7qqdaQldYUgaf78oYDQ0npEnvwVZ_3KOsWzMjhM3lA13YFjYiRJuKvoY4m4Y2JM5OZAVEr0uZEda8JZcwj9S6mNQ55RBXl6WOsGSBbNc5o22N143T3JOwGf0zpMkaSpumcM4QUkzNdoEVXROR4NXKYA1Yq4oQCqNhE56vCBtNNkrYelVsLWw25aKELQTmN9iirBZG8Ime223pmoF9qsbU-2kc1Bgf_hgX2U_3ay9j95A1nN13qjddfMiKgt2jmzt8iH5R9y0O9DA-vPjTK_7y8cUjf2SMP34-yXsc6d0Te3oVPLzEq9sv34eolO9Hg6Nx6iEr37-he_8FryvkQeQGAAA?mimetype=image/png",
+      "year": 2020,
+      "price": 41700,
+      "available": false
+  },
+  {
+      "brand": "Audi",
+      "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
+      "model": "A5",
+      "modelImage": "https://mediaservice.audi.com/media/cdb/data/e0552f58-fde9-423f-85e5-f531240b8fcd.jpg",
+      "year": 2018,
+      "price": 12000,
+      "available": false
+  }
+]
