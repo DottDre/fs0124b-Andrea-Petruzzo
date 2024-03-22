@@ -8,16 +8,16 @@
 </div>
 <div class="container mt-5">
   <div class="row">
-    <div class="col-3" *ngFor="let audi of audiArr">
-      <div class="card bg-black">
-        <img src={{audi.modelImage}} class="card-img-top" height="180">
-        <div class="card-body">
+    <div class="col-12 mb-5 col-lg-3 col-md-6" *ngFor="let audi of audiArr">
+      <div class="card">
+        <img src={{audi.modelImage}} class="card-img-top" height="220">
+        <div [ngClass]="{'bg-success': audi.available, 'bg-danger': !audi.available}" class="card-body">
           <h5 class="card-title text-white">{{audi.model}}</h5>
           <p class="card-text text-white">Anno: {{audi.year}}</p>
           <p class="card-text text-white">Prezzo: {{audi.price | currency: 'EUR'}}</p>
-          <a href="#" class="btn btn-secondary">Disponibilità</a>
+
         </div>
       </div>
-    </div>
+    </div>#
   </div>
 </div>

@@ -8,14 +8,14 @@
 </div>
 <div class="container mt-5">
   <div class="row">
-    <div class="col-3" *ngFor="let ford of fordArr">
+    <div class="col-12 mb-5 col-lg-3 col-md-6" *ngFor="let ford of fordArr">
       <div class="card bg-black">
         <img src={{ford.modelImage}} class="card-img-top" height="210">
-        <div class="card-body">
+        <div [ngClass]="{'bg-success': ford.available, 'bg-danger': !ford.available}" class="card-body">
           <h5 class="card-title text-white">{{ford.model}}</h5>
           <p class="card-text text-white">Anno: {{ford.year}}</p>
           <p class="card-text text-white">Prezzo: {{ford.price | currency: 'EUR'}}</p>
-          <a href="#" class="btn btn-primary">verifica disponibilità</a>
+
         </div>
       </div>
     </div>

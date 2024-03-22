@@ -9,6 +9,7 @@ import { ServiceautoService } from '../../serviceauto.service';
 })
 export class AudiComponent {
   audiArr: Automobili[] = []
+  isAvailable: boolean|null = null
 
   constructor(private autoSvc:ServiceautoService){}
 

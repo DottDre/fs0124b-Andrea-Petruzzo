@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { Automobili } from './models/automobili';
 import { Injectable } from '@angular/core';
 
@@ -24,7 +25,6 @@ export class ServiceautoService {
       return this.getAllAuto()
       .then(auto => auto.filter(a => a.brand === brand))
     }
-
 
 
     getRandomposts(n: number, array:Automobili[]):Promise<Automobili[]> {
