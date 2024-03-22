@@ -15,7 +15,8 @@
           <h5 class="card-title text-white">{{ford.model}}</h5>
           <p class="card-text text-white">Anno: {{ford.year}}</p>
           <p class="card-text text-white">Prezzo: {{ford.price | currency: 'EUR'}}</p>
-
+          <p class="card-text text-white" *ngIf="ford.available; else isNotAvailable">disponibile</p>
+          <ng-template #isNotAvailable><p class="card-text text-white">Non disponibile</p></ng-template>
         </div>
       </div>
     </div>

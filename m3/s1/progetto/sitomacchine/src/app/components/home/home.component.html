@@ -1,6 +1,6 @@
 <div class="container">
   <div class="text-center mb-5 bg-black">
-    <img src="../../../assets/img/logo.jpg" alt="">
+    <img src="../../../assets/img/logo.jpg" class="logo">
     <h1>Benvenuto nel nostro autosalone</h1>
   </div>
 
@@ -18,7 +18,7 @@
   </div>
   <div class="row">
     <div class="col-12 mb-5 col-lg-6 mb-md-5 "*ngFor="let auto of randomAutoArr">
-      <div class="card bg-black">
+      <div class="card bg-black h-100">
         <img src={{auto.modelImage}} class="card-img-top altezza">
         <div class="card-body">
           <h5 class="card-title text-white">{{auto.brand}}</h5>
