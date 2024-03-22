@@ -1,5 +1,6 @@
 [
   {
+      "id": 1,
       "brand": "Fiat",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
       "model": "500L",
@@ -9,6 +10,7 @@
       "available": false
   },
   {
+      "id":2,
       "brand": "Fiat",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
       "model": "Panda",
@@ -18,6 +20,7 @@
       "available": true
   },
   {
+      "id":3,
       "brand": "Fiat",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
       "model": "Punto",
@@ -27,6 +30,7 @@
       "available": false
   },
   {
+      "id":4,
       "brand": "Fiat",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fhttps://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
       "model": "500 Abarth",
@@ -36,6 +40,7 @@
       "available": true
   },
   {
+      "id":5,
       "brand": "Ford",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
       "model": "Taurus",
@@ -45,6 +50,7 @@
       "available": false
   },
   {
+      "id":6,
       "brand": "Ford",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
       "model": "bronco",
@@ -54,6 +60,7 @@
       "available": false
   },
   {
+      "id":7,
       "brand": "Ford",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
       "model": "Fiesta",
@@ -63,6 +70,7 @@
       "available": true
   },
   {
+      "id":8,
       "brand": "Ford",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ford_Motor_Company_Logo.svg/2560px-Ford_Motor_Company_Logo.svg.png",
       "model": "Focus",
@@ -72,6 +80,7 @@
       "available": true
   },
   {
+      "id":9,
       "brand": "Audi",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
       "model": "A3",
@@ -81,6 +90,7 @@
       "available": true
   },
   {
+      "id":10,
       "brand": "Audi",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
       "model": "A1",
@@ -90,6 +100,7 @@
       "available": true
   },
   {
+      "id":11,
       "brand": "Audi",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
       "model": "Q7",
@@ -99,6 +110,7 @@
       "available": false
   },
   {
+      "id":12,
       "brand": "Audi",
       "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Audi_logo_detail.svg/1280px-Audi_logo_detail.svg.png",
       "model": "A5",

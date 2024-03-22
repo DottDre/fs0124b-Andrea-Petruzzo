@@ -17,6 +17,7 @@
           <p class="card-text text-white">Prezzo: {{fiat.price | currency: 'EUR'}}</p>
           <p class="card-text text-white" *ngIf="fiat.available; else isNotAvailable">disponibile</p>
           <ng-template #isNotAvailable><p class="card-text text-white">Non disponibile</p></ng-template>
+          <button routerLink="/detail" class="btn btn-warning">dettagli</button>
         </div>
       </div>
     </div>

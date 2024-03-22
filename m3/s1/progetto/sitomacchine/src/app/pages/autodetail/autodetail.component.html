@@ -1,0 +1,19 @@
+
+<h2>purtroppo non funziona</h2>
+<p>Peccato</p>
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-2">
+      <img [src]="auto!.modelImage" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-10" [ngClass]="{'bg-success': auto!.available, 'bg-danger': !auto!.available}">
+      <div class="card-body">
+        <h5 class="card-title">{{auto!.model}}</h5>
+        <p class="card-text">{{auto!.brand}}</p>
+        <p class="card-text">Anno: {{auto!.year}}</p>
+        <p class="card-text">${{auto!.price}}</p>
+        <p class="card-text">{{auto!.available ? 'Disponibile' : 'Non Disponibile'}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AudiComponent } from './pages/audi/audi.component';
 import { FiatComponent } from './pages/fiat/fiat.component';
 import { FordComponent } from './pages/ford/ford.component';
+import { AutodetailComponent } from './pages/autodetail/autodetail.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path:'Ford',
     component:FordComponent
+  },
+  {
+    path:'detail',
+    component: AutodetailComponent
   }
 ];
 

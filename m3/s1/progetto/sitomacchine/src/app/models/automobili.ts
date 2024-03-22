@@ -1,4 +1,5 @@
 export interface Automobili {
+  id: number,
   brand: string
   brandLogo: string
   model: string
