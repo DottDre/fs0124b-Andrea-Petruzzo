@@ -10,10 +10,17 @@ import { Automobili } from '../../models/automobili';
 })
 export class AutodetailComponent {
   auto: Automobili | undefined;
+
+
   constructor(private router:ActivatedRoute, private carsSvc: ServiceautoService){}
+
+
   ngOnInit(){
-    this.router.params.subscribe((routeParameters:any) => {
-      this.carsSvc.getCarById(routeParameters.id).then ( res => this.auto = res)
+    this.router.params.subscribe((route:any) => {
+      this.carsSvc.getCarById(route.model)
+      .then(res => {
+        this.auto = res
+      })
     })
   }
 }

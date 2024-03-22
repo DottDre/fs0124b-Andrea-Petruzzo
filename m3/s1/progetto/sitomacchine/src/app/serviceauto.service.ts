@@ -29,9 +29,9 @@ export class ServiceautoService {
 
 
 }
-    getCarById(id:number):Promise<Automobili | undefined> {
-      return this.getAllAuto()
-    .then(res => res.find(a => a.id == id))
+  getCarById(id:number):Promise<Automobili | undefined>{
+  return this.getAllAuto()
+  .then(car => car.find(c => c.id == id))
 }
 }
 

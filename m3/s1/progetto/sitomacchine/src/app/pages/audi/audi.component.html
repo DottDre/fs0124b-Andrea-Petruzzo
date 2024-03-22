@@ -2,7 +2,7 @@
   <div class="row justify-content-center">
     <h2 class="text-center mb-5">Benvenuto in Audi</h2>
     <div class="col-6 text-center">
-      <img src={{audiArr[0].brandLogo}} class="img-fluid" width="400" />
+      <img src="{{ audiArr[0].brandLogo }}" class="img-fluid" width="400" />
     </div>
   </div>
 </div>
@@ -10,15 +10,31 @@
   <div class="row">
     <div class="col-12 mb-5 col-lg-3 col-md-6" *ngFor="let audi of audiArr">
       <div class="card">
-        <img src={{audi.modelImage}} class="card-img-top" height="220">
-        <div [ngClass]="{'bg-success': audi.available, 'bg-danger': !audi.available}" class="card-body">
-          <h5 class="card-title text-white">{{audi.model}}</h5>
-          <p class="card-text text-white">Anno: {{audi.year}}</p>
-          <p class="card-text text-white">Prezzo: {{audi.price | currency: 'EUR'}}</p>
-          <p class="card-text text-white" *ngIf="audi.available; else isNotAvailable">disponibile</p>
-          <ng-template #isNotAvailable><p class="card-text text-white">Non disponibile</p></ng-template>
-          <button routerLink="/detail" class="btn btn-warning">dettagli</button>
-
+        <img src="{{ audi.modelImage }}" class="card-img-top" height="220" />
+        <div
+          [ngClass]="{
+            'bg-success': audi.available,
+            'bg-danger': !audi.available
+          }"
+          class="card-body"
+        >
+          <h5 class="card-title text-white">{{ audi.model }}</h5>
+          <p class="card-text text-white">Anno: {{ audi.year }}</p>
+          <p class="card-text text-white">
+            Prezzo: {{ audi.price | currency : "EUR" }}
+          </p>
+          <p
+            class="card-text text-white"
+            *ngIf="audi.available; else isNotAvailable"
+          >
+            disponibile
+          </p>
+          <ng-template #isNotAvailable
+            ><p class="card-text text-white">Non disponibile</p></ng-template
+          >
+          <button class="btn btn-warning" [routerLink]="['/detail', audi.id]">
+            Visualizza
+          </button>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <div class="row justify-content-center">
     <h2 class="text-center mb-5">Benvenuto in Fiat</h2>
     <div class="col-6 text-center">
-      <img src={{fiatArr[0].brandLogo}} class="img-fluid" width="280" />
+      <img src="{{ fiatArr[0].brandLogo }}" class="img-fluid" width="280" />
     </div>
   </div>
 </div>
@@ -10,17 +10,38 @@
   <div class="row">
     <div class="col-12 mb-5 col-lg-3 col-md-6" *ngFor="let fiat of fiatArr">
       <div class="card bg-black">
-        <img src={{fiat.modelImage}} class="card-img-top" alt="..."  height="180">
-        <div [ngClass]="{'bg-success': fiat.available, 'bg-danger': !fiat.available}" class="card-body">
-          <h5 class="card-title text-white">{{fiat.model}}</h5>
-          <p class="card-text text-white">Anno: {{fiat.year}}</p>
-          <p class="card-text text-white">Prezzo: {{fiat.price | currency: 'EUR'}}</p>
-          <p class="card-text text-white" *ngIf="fiat.available; else isNotAvailable">disponibile</p>
-          <ng-template #isNotAvailable><p class="card-text text-white">Non disponibile</p></ng-template>
-          <button routerLink="/detail" class="btn btn-warning">dettagli</button>
+        <img
+          src="{{ fiat.modelImage }}"
+          class="card-img-top"
+          alt="..."
+          height="180"
+        />
+        <div
+          [ngClass]="{
+            'bg-success': fiat.available,
+            'bg-danger': !fiat.available
+          }"
+          class="card-body"
+        >
+          <h5 class="card-title text-white">{{ fiat.model }}</h5>
+          <p class="card-text text-white">Anno: {{ fiat.year }}</p>
+          <p class="card-text text-white">
+            Prezzo: {{ fiat.price | currency : "EUR" }}
+          </p>
+          <p
+            class="card-text text-white"
+            *ngIf="fiat.available; else isNotAvailable"
+          >
+            disponibile
+          </p>
+          <ng-template #isNotAvailable
+            ><p class="card-text text-white">Non disponibile</p></ng-template
+          >
+          <button class="btn btn-warning" [routerLink]="['/detail', fiat.id]">
+            Visualizza
+          </button>
         </div>
       </div>
     </div>
-
   </div>
 </div>

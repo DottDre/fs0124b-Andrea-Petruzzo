@@ -25,7 +25,7 @@ const routes: Routes = [
     component:FordComponent
   },
   {
-    path:'detail',
+    path:'detail/:id',
     component: AutodetailComponent
   }
 ];

@@ -1,19 +1,16 @@
 
-<h2>purtroppo non funziona</h2>
-<p>Peccato</p>
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-2">
-      <img [src]="auto!.modelImage" class="img-fluid rounded-start" alt="...">
+<div class="row">
+  <div *ngIf="auto != undefined" class="col-6"><div class="card">
+    <img [src]="[auto.modelImage]" class="card-img-top" alt="...">
+    <div [ngClass]= "{ 'bg-success': auto.available, 'bg-danger' : !auto.available}" class="card-body">
+      <h5 class="card-title">{{auto.model}}</h5>
+      <p class="card-text">{{auto.brand}}</p>
     </div>
-    <div class="col-10" [ngClass]="{'bg-success': auto!.available, 'bg-danger': !auto!.available}">
-      <div class="card-body">
-        <h5 class="card-title">{{auto!.model}}</h5>
-        <p class="card-text">{{auto!.brand}}</p>
-        <p class="card-text">Anno: {{auto!.year}}</p>
-        <p class="card-text">${{auto!.price}}</p>
-        <p class="card-text">{{auto!.available ? 'Disponibile' : 'Non Disponibile'}}</p>
-      </div>
-    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Prezzo: {{auto.price | currency:'eur'}} </li>
+      <li class="list-group-item">Anno : {{auto.year}}</li>
+      <li *ngIf="auto.available; else isNotAvaible" class="list-group-item">Modello disponibile</li>
+      <ng-template #isNotAvaible><li class="list-group-item">Modello non disponibile</li></ng-template>
+    </ul>
   </div>
 </div>
