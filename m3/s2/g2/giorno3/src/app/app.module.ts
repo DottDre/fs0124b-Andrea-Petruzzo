@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SinglePostComponent } from './components/single-post/single-post.component';
 import { FormsModule } from '@angular/forms';
 import { BuiltInPipe } from './built-in.pipe';
+import { ColoresfondoDirective } from './coloresfondo.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BuiltInPipe } from './built-in.pipe';
     PostDetailComponent,
     FooterComponent,
     SinglePostComponent,
-    BuiltInPipe
+    BuiltInPipe,
+    ColoresfondoDirective
   ],
   imports: [
     BrowserModule,
