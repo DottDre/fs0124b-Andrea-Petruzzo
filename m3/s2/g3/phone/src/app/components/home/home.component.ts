@@ -18,7 +18,10 @@ export class HomeComponent {
       this.cell = el.products
     })
   }
-  addPref(){
-
+  addPref(cell:Iphone):void{
+    if(!this.preferiti.some(item => item.id === cell.id)){
+      this.preferiti.push(cell)
+    }
+    console.log(this.preferiti)
   }
 }
