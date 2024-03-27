@@ -1,0 +1,21 @@
+<table class="table">
+  <tr>
+    <th>#</th>
+    <th>Gusto</th>
+    <th>Disponibile</th>
+    <th>Prezzo</th>
+    <th>azioni</th>
+  </tr>
+
+  <tr *ngFor="let cellulare of cell; let i = index">
+    <td>{{i + 1}}</td>
+    <td>{{cellulare.title}}</td>
+    <td>{{cellulare.brand}}</td>
+    <td>{{cellulare.price | currency}}</td>
+    <td>
+      <button class="btn btn-warning">aggiungi al carrello</button>
+      <button class="btn btn-danger">aggiungi ai preferiti</button>
+    </td>
+  </tr>
+</table>
+
