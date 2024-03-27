@@ -10,12 +10,15 @@ import { Iphone } from '../../models/iphone';
 })
 export class HomeComponent {
   cell: Iphone[] = []
-
+  preferiti: Iphone[] = []
   constructor(private cellSvc:CellService){}
 
   ngOnInit(){
     this.cellSvc.getAllPhone().subscribe(el =>{
       this.cell = el.products
     })
+  }
+  addPref(){
+
   }
 }

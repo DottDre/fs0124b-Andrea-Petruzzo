@@ -14,7 +14,7 @@
     <td>{{cellulare.price | currency}}</td>
     <td>
       <button class="btn btn-warning">aggiungi al carrello</button>
-      <button class="btn btn-danger">aggiungi ai preferiti</button>
+      <button (click)="addPref()" class="btn btn-danger">aggiungi ai preferiti</button>
     </td>
   </tr>
 </table>
