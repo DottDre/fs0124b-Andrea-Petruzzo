@@ -1,0 +1,14 @@
+<h1>Tutte le nostre Foto</h1>
+<h2>totale favoriti: {{likeArr.length}}</h2>
+<div class="row d-flex  ">
+  <div *ngFor=" let p of photosArr" class="col-4 ">
+  <div  class="card" style="width: 18rem;">
+    <img [src]="p.thumbnailUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{p.title}}</h5>
+      <button class="btn btn-danger" (click)="cancella(p.id)">Elimina</button>
+      <button class="btn btn-warning"(click)="like(p.id)">mi piace</button>
+
+    </div>
+  </div>
+  </div>
