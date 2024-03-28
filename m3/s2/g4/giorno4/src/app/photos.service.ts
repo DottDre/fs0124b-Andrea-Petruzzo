@@ -43,6 +43,7 @@ export class PhotosService {
 addToLike(id:number):void{
   const photoId = this.getById(id)
   if(photoId)
+  if(!this.likeArr.some(i => i.id == id))
   this.likeArr.push(photoId)
   this.likeSubject.next(this.likeArr)
 }

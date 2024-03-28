@@ -1,7 +1,7 @@
 <h1>Tutte le nostre Foto</h1>
-<h2>totale favoriti: {{likeArr.length}}</h2>
-<div class="row d-flex  ">
-  <div *ngFor=" let p of photosArr" class="col-4 ">
+<h2>totale mi piace: {{likeArr.length}}</h2>
+<div class="row d-flex">
+  <div *ngFor=" let p of photosArr" class="col-4 mb-5 ">
   <div  class="card" style="width: 18rem;">
     <img [src]="p.thumbnailUrl" class="card-img-top" alt="...">
     <div class="card-body">
