@@ -10,16 +10,7 @@ import { Todo } from '../../interface/todo';
 export class TodoComponent {
   todos: Todo[] = []
   @Input() todo!: Todo
-  @Input() query!: string
-
-
   constructor(private todoSvc: TodoService) { }
-
-  ngOninit(): void {
-    this.todos = this.todoSvc.filterQuery(this.query?.toLowerCase() || "")
-
-  }
-
   toggle(id: number) {
     this.todoSvc.toggle(id)
   }

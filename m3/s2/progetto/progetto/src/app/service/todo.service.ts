@@ -920,11 +920,7 @@ export class TodoService {
   toComplete():Todo[]{
     return this.todos.filter(t => !t.completed)
   }
-  filterQuery(query:string){
-    return this.todos.filter(t => {
-      return t.user?.firstName.toLowerCase().includes(query) || t.user?.lastName.toLowerCase().includes(query)
-    })
-  }
+
   toggle(id:number){
     const found = this.todos.find(t => t.id === id)
     if(found){
