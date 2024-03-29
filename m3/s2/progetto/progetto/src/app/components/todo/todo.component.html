@@ -1,6 +1,6 @@
 <div class="d-flex flex-column mb-3">
   <div [ngClass]="{'green': todo.completed, 'red': !todo.completed}">
-    <label class="bold">
+    <label  class="bold">
       <input (change)="toggle(todo.id)" [checked]="todo.completed" type="checkbox">
       {{todo.todo}}
     </label>

@@ -10,8 +10,8 @@ import { Todo } from '../../interface/todo';
 export class TodoComponent {
   todos: Todo[] = []
   @Input() todo!: Todo
-  constructor(private todoSvc: TodoService) { }
-  toggle(id: number) {
+constructor(private todoSvc: TodoService) { }
+    toggle(id: number) {
     this.todoSvc.toggle(id)
   }
 
