@@ -910,9 +910,7 @@ export class TodoService {
     },
   ];
   constructor(private userSvc: UserService) {
-    this.popular()
   }
-
   getAll():Todo[]{
     return this.todos
   }
@@ -921,11 +919,6 @@ export class TodoService {
   }
   toComplete():Todo[]{
     return this.todos.filter(t => !t.completed)
-  }
-  popular() {
-    this.todos.forEach(todo => {
-      todo.user = this.userSvc.getById(todo.userId)
-    })
   }
   filterQuery(query:string){
     return this.todos.filter(t => {
