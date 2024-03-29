@@ -12,6 +12,6 @@ export class ToCompleteComponent {
   constructor(private todoSvc: TodoService) { }
   ngOnInit(): void {
     this.todos = this.todoSvc.toComplete()
-
   }
 }
+
