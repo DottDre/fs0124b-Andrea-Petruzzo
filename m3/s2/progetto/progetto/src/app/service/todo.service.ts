@@ -926,12 +926,10 @@ export class TodoService {
       todo.user = this.userSvc.getById(todo.userId)
     })
   }
+    actived(id:number){
+    const f = this.todos.find(t => t.id === id)
+    f!.completed = !f!.completed
 
-  toggle(id:number){
-    const found = this.todos.find(t => t.id === id)
-    if(found){
-      found.completed = !found.completed
-    }
     }
   userMap():User[]{
     return this.userSvc.getAll().map(u =>{

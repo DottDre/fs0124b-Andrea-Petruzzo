@@ -11,8 +11,8 @@ export class TodoComponent {
   todos: Todo[] = []
   @Input() todo!: Todo
 constructor(private todoSvc: TodoService) { }
-    toggle(id: number) {
-    this.todoSvc.toggle(id)
+    actived(id: number) {
+    this.todoSvc.actived(id)
   }
 
 }
