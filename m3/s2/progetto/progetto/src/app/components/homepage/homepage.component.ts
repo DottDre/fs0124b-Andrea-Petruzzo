@@ -10,7 +10,6 @@ import { TodoService } from '../../service/todo.service';
 })
 export class HomepageComponent {
   todos!:Todo[]
-  query!: string
   constructor(private todoSvc: TodoService) { }
   ngOnInit(): void {
     this.todos = this.todoSvc.getAll()

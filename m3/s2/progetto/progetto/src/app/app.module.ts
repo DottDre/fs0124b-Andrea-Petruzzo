@@ -8,6 +8,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { CompleteComponent } from './components/complete/complete.component';
 import { ToCompleteComponent } from './components/to-complete/to-complete.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     UserComponent,
     HomepageComponent,
     CompleteComponent,
-    ToCompleteComponent
+    ToCompleteComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

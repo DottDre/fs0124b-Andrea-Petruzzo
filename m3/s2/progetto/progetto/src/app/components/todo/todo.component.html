@@ -1,7 +1,7 @@
-<div class="d-flex flex-column mb-3">
+<div>
   <div [ngClass]="{'green': todo.completed, 'red': !todo.completed}">
     <label class="bold">
-      <input (change)="actived(todo.id)" [checked]="todo.completed" type="checkbox">
+      <input (click)="actived(todo.id)" [checked]="todo.completed" type="checkbox">
       {{todo.todo}}
     </label>
     <p class="ps-3"> Assigned to: {{todo.user!.firstName}} {{todo.user!.lastName}}</p>

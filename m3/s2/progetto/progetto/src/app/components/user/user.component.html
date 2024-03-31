@@ -1,15 +1,17 @@
-<div class="d-flex flex-column  gap-3 justify-content-center mt-5" *ngFor="let user of users">
-  <div class="card mb-3">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="{{user.image}}" class="img-fluid rounded-start">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">{{user.firstName}} {{user.lastName}}</h5>
+<div class="container">
+  <div class="d-flex flex-column  gap-3 justify-content-center mt-5" *ngFor="let user of users">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]="user.image" class="img-fluid rounded-start">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{user.firstName}} {{user.lastName}}</h5>
 
-          <p class="card-text">{{user.title}}</p>
-          <app-todo [todo]="todo" *ngFor="let todo of user.todos"></app-todo>
+            <p class="card-text">{{user.title}}</p>
+            <app-todo [todo]="todo" *ngFor="let todo of user.todos"></app-todo>
+          </div>
         </div>
       </div>
     </div>

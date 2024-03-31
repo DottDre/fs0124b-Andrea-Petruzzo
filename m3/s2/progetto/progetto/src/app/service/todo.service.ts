@@ -929,10 +929,9 @@ export class TodoService {
     actived(id:number){
     const f = this.todos.find(t => t.id === id)
     f!.completed = !f!.completed
-
-    }
+  }
   userMap():User[]{
-    return this.userSvc.getAll().map(u =>{
+    return this.userSvc.getAll().map(u => {
       u.todos = this.getAll().filter(t => t.userId === u.id)
       return u
     })
