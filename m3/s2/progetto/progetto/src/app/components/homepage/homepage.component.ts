@@ -1,6 +1,8 @@
+import { User } from './../../interface/user';
 import { Component } from '@angular/core';
 import { Todo } from '../../interface/todo';
 import { TodoService } from '../../service/todo.service';
+import { UserService } from '../../service/user.service';
 
 
 @Component({
@@ -10,9 +12,11 @@ import { TodoService } from '../../service/todo.service';
 })
 export class HomepageComponent {
   todos!:Todo[]
-  constructor(private todoSvc: TodoService) { }
+  user!:User[]
+  constructor(private todoSvc: TodoService, private UserSvc:UserService) { }
   ngOnInit(): void {
     this.todos = this.todoSvc.getAll()
+    this.user = this.UserSvc.getAll()
   }
 
 }

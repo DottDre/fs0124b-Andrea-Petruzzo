@@ -1,4 +1,5 @@
-import { Component, Input, } from '@angular/core';
+
+import { Component, Input, input, } from '@angular/core';
 import { TodoService } from '../../service/todo.service';
 import { Todo } from '../../interface/todo';
 
@@ -14,7 +15,6 @@ constructor(private todoSvc: TodoService) { }
     actived(id: number) {
     this.todoSvc.actived(id)
   }
-
 }
 
 
