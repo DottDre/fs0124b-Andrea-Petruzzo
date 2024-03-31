@@ -12,11 +12,11 @@ import { UserService } from '../../service/user.service';
 })
 export class HomepageComponent {
   todos!:Todo[]
-  user!:User[]
+
   constructor(private todoSvc: TodoService, private UserSvc:UserService) { }
   ngOnInit(): void {
     this.todos = this.todoSvc.getAll()
-    this.user = this.UserSvc.getAll()
+
   }
 
 }
