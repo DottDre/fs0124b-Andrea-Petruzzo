@@ -1,4 +1,3 @@
-<div>
   <div [ngClass]="{'green': todo.completed, 'red': !todo.completed}">
     <label class="bold">
       <input (click)="actived(todo.id)" [checked]="todo.completed" type="checkbox">
@@ -6,4 +5,4 @@
     </label>
     <p class="ps-3"> Assigned to: {{todo.user!.firstName}} {{todo.user!.lastName}}</p>
   </div>
-</div>
+

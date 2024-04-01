@@ -1,4 +1,4 @@
-import { User } from './../../interface/user';
+
 import { Component } from '@angular/core';
 import { Todo } from '../../interface/todo';
 import { TodoService } from '../../service/todo.service';
