@@ -6,13 +6,13 @@
 
   <input type="password" placeholder="password" required formControlName="password" class="form-control">
 
-  <input type="conferma-pass" placeholder="conferma password" required formControlName="confermapass" class="form-control">
+  <input type="password" placeholder="conferma password" required formControlName="confermapass" class="form-control">
+
   <div class="form-group">
 
-    <div class="form-check" *ngFor="let g of generi">
-      <input [id]="g" [value]="g" type="radio" name="genere" ngModel class="form-check-input">
-      <label [for]="g">{{g}}</label>
-    </div>
+    <select formControlName="genere" id="genere" class="form-select">
+      <option *ngFor="let g of generi" [value]="g">{{g}}</option>
+    </select>
 
   </div>
 
