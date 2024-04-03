@@ -1,0 +1,22 @@
+<form [formGroup]="form">
+
+  <input type="text" placeholder="nome" required formControlName="nome" class="form-control">
+
+  <input type="text" placeholder="cognome" required formControlName="cognome" class="form-control">
+
+  <input type="password" placeholder="password" required formControlName="password" class="form-control">
+
+  <input type="conferma-pass" placeholder="conferma password" required formControlName="confermapass" class="form-control">
+  <div class="form-group">
+
+    <div class="form-check" *ngFor="let g of generi">
+      <input [id]="g" [value]="g" type="radio" name="genere" ngModel class="form-check-input">
+      <label [for]="g">{{g}}</label>
+    </div>
+
+  </div>
+
+  <button (click)="metodo()" class="btn btn-success">Invia</button>
+
+
+</form>
