@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component,} from '@angular/core';
 import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 
 
@@ -20,10 +20,11 @@ generi:string[]=[
 
     this.form = this.fb.group({
       nome: this.fb.control(null,[Validators.required]),
-      cognome: this.fb.control(null),
-      password: this.fb.control(null),
-      confermapass: this.fb.control(null),
-      genere: this.fb.control(null)
+      cognome: this.fb.control(null,[Validators.required]),
+      password: this.fb.control(null,[Validators.required]),
+      confermapass: this.fb.control(null,[Validators.required]),
+      genere: this.fb.control(null,[Validators.required]),
+      username: this.fb.control(null,[Validators.required]),
       })
       console.log(this.form.value);
     }

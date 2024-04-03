@@ -1,22 +1,49 @@
 <form [formGroup]="form">
 
-  <input type="text" placeholder="nome" required formControlName="nome" class="form-control">
+  <input
+  type="text"
+  placeholder="nome"
+  required
+  formControlName="nome"
+  class="form-control">
 
-  <input type="text" placeholder="cognome" required formControlName="cognome" class="form-control">
+  <input
+  type="text"
+  placeholder="cognome"
+  required
+  formControlName="cognome"
+  class="form-control">
 
-  <input type="password" placeholder="password" required formControlName="password" class="form-control">
+  <input
+  type="password"
+  placeholder="password"
+  required
+  formControlName="password"
+  class="form-control">
 
-  <input type="password" placeholder="conferma password" required formControlName="confermapass" class="form-control">
+  <input
+  type="password"
+  placeholder="conferma password"
+  required
+  formControlName="confermapass"
+  class="form-control">
+
+  <input
+  type="text"
+  placeholder="username"
+  required
+  formControlName="username"
+  class="form-control">
 
   <div class="form-group">
 
-    <select formControlName="genere" id="genere" class="form-select">
+    <select formControlName="genere" id="genere" class="form-select" required>
       <option *ngFor="let g of generi" [value]="g">{{g}}</option>
     </select>
 
   </div>
 
-  <button (click)="metodo()" class="btn btn-success">Invia</button>
+  <button (click)="metodo()" [disabled]="form.invalid" class="btn btn-success mt-3">Invia</button>
 
 
 </form>
