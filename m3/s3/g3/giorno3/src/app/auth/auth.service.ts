@@ -73,4 +73,8 @@ export class AuthService {
       this.autoLogout(accessData.accessToken)
 
     }
+    isLoggedIn(){
+      return false
+    }
+
 }

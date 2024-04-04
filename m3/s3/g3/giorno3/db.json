@@ -23,6 +23,12 @@
       "password": "$2a$10$mok6qDaGd3/y6APPLYv8Y.hNgeTH04W774RSsbxA2qsRfH9uKqjy6",
       "name": "xristiano",
       "id": 4
+    },
+    {
+      "email": "Giovanni@g.it",
+      "password": "$2a$10$IeqPOjhlVnc5uhHB8Zy0eeV9/k3VCIeNsIGTPzXU0FTn.gWfkh.Iq",
+      "name": "andrea ",
+      "id": 5
     }
   ]
 }
