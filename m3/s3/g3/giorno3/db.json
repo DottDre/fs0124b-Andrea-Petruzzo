@@ -1,3 +1,28 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "mario.varano@gmail.com",
+      "password": "$2a$10$ir1v4e4YE2HDXT1AIn9XIeNYQeWR2nkJNlDTHy8vEyhOq6a5dNV9i",
+      "name": "mario",
+      "id": 1
+    },
+    {
+      "email": "acquarius33@gmail.com",
+      "password": "$2a$10$IA2dRtDY7Qo9qvor6qozE.eSHFCsTzC/pZ.aLnvbM1W1Zix9nKYNG",
+      "name": "andrea",
+      "id": 2
+    },
+    {
+      "email": "antonio@schipani.it",
+      "password": "$2a$10$fV2RNiyPbAH/8dXhdA5nN.l50PLbyxZdSxkOSAHeiLKbGwewR8Yia",
+      "name": "antonio",
+      "id": 3
+    },
+    {
+      "email": "cristiano@turri.it",
+      "password": "$2a$10$mok6qDaGd3/y6APPLYv8Y.hNgeTH04W774RSsbxA2qsRfH9uKqjy6",
+      "name": "xristiano",
+      "id": 4
+    }
+  ]
 }
