@@ -1,1 +1,16 @@
-<p>login works!</p>
+<h1>Accedi</h1>
+
+<form>
+
+  <input type="email" name="email"
+  [(ngModel)]="login.email"
+  class="form-control" placeholder="email">
+
+  <input type="password" name="password"
+  [(ngModel)]="login.password"
+  class="form-control" placeholder="password">
+
+  <button (click)="signIn()" class="btn btn-success">Accedi</button>
+
+</form>
+

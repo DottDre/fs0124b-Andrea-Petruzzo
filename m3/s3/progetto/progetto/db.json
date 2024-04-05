@@ -1,7 +1,12 @@
 {
-  "users":[],
-  "movies-popular":[],
-  "favorites":[]
+  "users": [
+    {
+      "email": "mario@varano.it",
+      "password": "$2a$10$/4kXHiL1ljHVblnWVAGIFeN/EN4GEhBYKIsV/QPP1qGX6.5dbEqPu",
+      "firstName": "mario",
+      "id": 1
+    }
+  ],
+  "movies-popular": [],
+  "favorites": []
 }
-
-
