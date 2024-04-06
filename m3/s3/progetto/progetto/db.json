@@ -92,7 +92,7 @@
       "year": 2009,
       "type": ["Adventure", "Drama", "War"],
       "plot": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
-      "imgUrl": "https://picsum.photos/id/245/200/300"
+      "imgUrl": "https://picsum.photos/200/300"
     },
     {
       "id": 10,
@@ -100,7 +100,7 @@
       "year": 1972,
       "type": ["Crime", "Drama"],
       "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      "imgUrl": "https://picsum.photos/id/246/200/300"
+      "imgUrl": "https://picsum.photos/200/300"
     },
     {
       "id": 11,
