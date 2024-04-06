@@ -2,11 +2,170 @@
   "users": [
     {
       "email": "mario@varano.it",
-      "password": "$2a$10$/4kXHiL1ljHVblnWVAGIFeN/EN4GEhBYKIsV/QPP1qGX6.5dbEqPu",
-      "firstName": "mario",
+      "password": "$2a$10$GD4UQ5yO8/HGVD2fABdOm.EJzx./dX6XBASLKjrKg4IwyDzWs7ll6",
+      "firstName": "mario ",
       "id": 1
+    },
+    {
+      "email": "cri@turri.it",
+      "password": "$2a$10$B8Q1sjDs60MRTSndyJsxheL8RU2tT58TBwME5d1IXD9RtYtSW/eeO",
+      "firstName": "cristiano",
+      "lastName": "turri",
+      "id": 2
+    },
+    {
+      "email": "acquarius@gmail.com",
+      "password": "$2a$10$J7k1NoSvHstkN1No68J4j.Ggd.HvczMvxdOV3ODaDZC8.v0M5BfAm",
+      "firstName": "andrea ",
+      "lastName": "petruzzo",
+      "id": 3
     }
   ],
-  "movies-popular": [],
+  "movies-popular": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "year": 2010,
+      "type": ["Action", "Adventure", "Sci-Fi"],
+      "plot": "A thief who enters the subconscious of his targets to extract information must plant an idea to compromise his last job.",
+      "imgUrl": "https://picsum.photos/id/237/200/300"
+    },
+    {
+      "id": 2,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "type": ["Drama", "Crime"],
+      "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "imgUrl": "https://picsum.photos/id/238/200/300"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "type": ["Action", "Crime", "Drama"],
+      "plot": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+      "imgUrl": "https://picsum.photos/id/239/200/300"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "genre": ["Crime", "Drama"],
+      "plot": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "imgUrl": "https://picsum.photos/id/240/200/300"
+    },
+    {
+      "id": 5,
+      "title": "The Matrix",
+      "year": 1999,
+      "type": ["Action", "Sci-Fi"],
+      "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "imgUrl": "https://picsum.photos/id/241/200/300"
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "genre": ["Drama", "Romance"],
+      "plot": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      "imgUrl": "https://picsum.photos/id/242/200/300"
+    },
+    {
+      "id": 7,
+      "title": "Fight Club",
+      "year": 1999,
+      "type": ["Drama"],
+      "plot": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into something much, much more.",
+      "imgUrl": "https://picsum.photos/id/243/200/300"
+    },
+    {
+      "id": 8,
+      "title": "Goodfellas",
+      "year": 1990,
+      "type": ["Crime", "Drama"],
+      "plot": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+      "imgUrl": "https://picsum.photos/id/244/200/300"
+    },
+    {
+      "id": 9,
+      "title": "Inglourious Basterds",
+      "year": 2009,
+      "type": ["Adventure", "Drama", "War"],
+      "plot": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
+      "imgUrl": "https://picsum.photos/id/245/200/300"
+    },
+    {
+      "id": 10,
+      "title": "The Godfather",
+      "year": 1972,
+      "type": ["Crime", "Drama"],
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "imgUrl": "https://picsum.photos/id/246/200/300"
+    },
+    {
+      "id": 11,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "type": ["Action", "Adventure", "Drama"],
+      "plot": "A young hobbit, Frodo, who has found the One Ring that belongs to the Dark Lord Sauron, begins his journey with eight companions to Mount Doom, the only place where it can be destroyed.",
+      "imgUrl": "https://picsum.photos/id/247/200/300"
+    },
+    {
+      "id": 12,
+      "title": "Schindler's List",
+      "year": 1993,
+      "type": ["Biography", "Drama", "History"],
+      "plot": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "imgUrl": "https://picsum.photos/id/248/200/300"
+    },
+    {
+      "id": 13,
+      "title": "The Departed",
+      "year": 2006,
+      "genre": ["Crime", "Drama", "Thriller"],
+      "plot": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+      "imgUrl": "https://picsum.photos/id/249/200/300"
+    },
+    {
+      "id": 14,
+      "title": "The Green Mile",
+      "year": 1999,
+      "type": ["Crime", "Drama", "Fantasy"],
+      "plot": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+      "imgUrl": "https://picsum.photos/id/250/200/300"
+    },
+    {
+      "id": 15,
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "type": ["Crime", "Drama", "Thriller"],
+      "plot": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "imgUrl": "https://picsum.photos/id/251/200/300"
+    },
+    {
+      "id": 16,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "type": ["Drama", "Crime"],
+      "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "imgUrl": "https://picsum.photos/id/252/200/300"
+    },
+    {
+      "id": 17,
+      "title": "The Godfather: Part II",
+      "year": 1974,
+      "type": ["Crime", "Drama"],
+      "plot": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on his crime syndicate stretching from Lake Tahoe, Nevada to pre-revolution 1958 Cuba.",
+      "imgUrl": "https://picsum.photos/id/253/200/300"
+    },
+    {
+      "id": 18,
+      "title": "The Dark Knight Rises",
+      "year": 2012,
+      "type": ["Action", "Adventure", "Thriller"],
+      "plot": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
+      "imgUrl": "https://picsum.photos/id/254/200/300"
+    }
+  ],
   "favorites": []
 }

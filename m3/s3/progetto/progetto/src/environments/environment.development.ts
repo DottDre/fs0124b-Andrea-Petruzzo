@@ -1,4 +1,5 @@
 export const environment = {
   loginUrl:"http://localhost:3000/login",
-  registerUrl:"http://localhost:3000/register"
+  registerUrl:"http://localhost:3000/register",
+  filmUrl:"http://localhost:3000/film-list"
 }

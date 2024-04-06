@@ -5,12 +5,12 @@
       </a>
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
         <li><a routerLink="/" class="nav-link px-2 link-body-emphasis">Home</a></li>
-        <li><a routerLink="/profile" class="nav-link px-2 link-body-emphasis">Profilo</a></li>
-        <li><a routerLink="/film-list" class="nav-link px-2 link-body-emphasis">film</a></li>
-        <li><a routerLink="/user-registered" class="nav-link px-2 link-body-emphasis">Utenti Registrati</a></li>
+        <li><a routerLink="/profile" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Profilo</a></li>
+        <li><a routerLink="/film-list" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">film</a></li>
+        <li><a routerLink="/user-registered" class="nav-link px-2 link-body-emphasis"*ngIf="isUserLoggedIn">Utenti Registrati</a></li>
       </ul>
       <div class="dropdown text-end">
-        <a href="#"
+        <a
         class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
         (click)="collapse.toggle()"
         [attr.aria-expanded]="!isCollapsed"
@@ -20,7 +20,9 @@
         <ul #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
           <li class="text-decoration-none"><a class="dropdown-item" routerLink="/auth/login">login</a></li>
           <li class="text-decoration-none"><a class="dropdown-item" routerLink="/auth/register">register</a></li>
+          <button (click)="logout()" *ngIf="isUserLoggedIn" class="btn btn-danger">Esci</button>
         </ul>
+
       </div>
     </div>
 </header>

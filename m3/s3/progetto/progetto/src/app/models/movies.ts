@@ -4,5 +4,5 @@ export interface Movies {
   year:number|string
   type:string
   imgUrl:string
-  description:string
+  plot:string
 }
