@@ -3,36 +3,58 @@ import { environment } from '../environments/environment.development';
 import { Movies } from './models/movies';
 import { BehaviorSubject, tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Users } from './models/users';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceService {
+export class MovieService {
 
   filmUrl = environment.filmUrl;
 
+  userUrl = environment.usersUrl
+
   filmArr: Movies[]=[]
+
+  userArr: Users[]=[]
 
   filmSubject = new BehaviorSubject<Movies[]>([]);
 
-  $users = this.filmSubject.asObservable()
+  userSubject = new BehaviorSubject<Users[]>([]);
+
+  $film = this.filmSubject.asObservable()
+
+  $users= this.userSubject.asObservable()
 
   constructor(private http:HttpClient){
-    this.getAll().subscribe(data => {
+    this.getAllMovies().subscribe(data => {
       this.filmSubject.next(data)
       this.filmArr = data;
     })
+    this.getAllUsers().subscribe(data => {
+      this.userSubject.next(data)
+      this.userArr = data
+    })
   }
 
-  getAll(){
+  getAllMovies(){
     return this.http.get<Movies[]>(this.filmUrl)
   }
 
-  delete(id:number){
+  deleteMovie(id:number){
     return this.http.delete<Movies>(this.filmUrl+ '/' +id)
     .pipe(tap(()=>{
       this.filmArr = this.filmArr.filter(p => p.id != id)
       this.filmSubject.next(this.filmArr)
     }))
+  }
+  getAllUsers(){
+    return this.http.get<Users[]>(this.userUrl)
+  }
+
+  updateUsersList(): void {
+    this.getAllUsers().subscribe(users => {
+      this.userSubject.next(users);
+    });
   }
 }

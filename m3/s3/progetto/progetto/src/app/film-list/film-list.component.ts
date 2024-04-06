@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Movies } from '../models/movies';
-import { ServiceService } from '../service.service';
+import { MovieService} from '../movie.service';
 
 @Component({
   selector: 'app-film-list',
@@ -11,16 +11,16 @@ export class FilmListComponent {
 
   film: Movies[]=[];
 
-  constructor(private filmSvc: ServiceService) { }
+  constructor(private filmSvc: MovieService) { }
 
   ngOnInit(): void {
-    this.filmSvc.$users.subscribe(film => {
+    this.filmSvc.$film.subscribe(film => {
       this.film = film;
     });
   }
 
   deleteMovie(id:number){
-    this.filmSvc.delete(id).subscribe()
+    this.filmSvc.deleteMovie(id).subscribe()
   }
 
 }
