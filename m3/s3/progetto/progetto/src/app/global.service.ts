@@ -55,7 +55,7 @@ export class GlobalService {
     }))
   }
   editMovie(newMovie: Partial<Movies>){
-    return this.http.put<Movies>(this.filmUrl,newMovie)
+    return this.http.patch<Movies>(this.filmUrl,newMovie)
     .pipe(tap(() => {
       this.getAllMovies().subscribe(movie => this.filmSubject.next(movie))
     }))

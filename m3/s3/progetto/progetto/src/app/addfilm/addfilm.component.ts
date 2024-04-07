@@ -18,7 +18,6 @@ export class AddfilmComponent {
     add(){
       this.addSvc.addMovie(this.aggiungiFilm)
       .subscribe(data =>{
-
         this.router.navigate(['/film-list'])
       })
   }

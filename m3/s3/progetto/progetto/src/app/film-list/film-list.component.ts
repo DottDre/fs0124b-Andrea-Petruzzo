@@ -14,12 +14,11 @@ export class FilmListComponent {
   modificaFilm:Partial<Movies> = {}
   constructor(private filmSvc: GlobalService, private router:Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.filmSvc.$film.subscribe(film => {
       this.film = film;
     });
   }
-
   deleteMovie(id:number){
     this.filmSvc.deleteMovie(id).subscribe()
   }
