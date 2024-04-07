@@ -1,23 +1,27 @@
-<h1>Registrati</h1>
-
-<form>
-
-  <input type="text" name="nome"
-  [(ngModel)]="registerData.firstName"
-  class="form-control" placeholder="nome">
-
-  <input type="text" name="nome"
-  [(ngModel)]="registerData.lastName"
-  class="form-control" placeholder="cognome">
-
-  <input type="email" name="email"
-  [(ngModel)]="registerData.email"
-  class="form-control" placeholder="email">
-
-  <input type="password" name="password"
-  [(ngModel)]="registerData.password"
-  class="form-control" placeholder="password">
-
-  <button (click)="signUp()" class="btn btn-success">Registrati</button>
-
+<h1 class="text-white">Registrati</h1>
+<form class="p-4 p-md-5  rounded-3 viola ">
+  <div class="form-floating mb-3">
+    <input type="email" [(ngModel)]="registerData.firstName" class="form-control" name="nome" required placeholder="nome">
+    <label for="floatingInput">Nome</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" [(ngModel)]="registerData.lastName" class="form-control" name="cognome" required placeholder="cognome">
+    <label for="floatingInput">Cognome</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" [(ngModel)]="registerData.email" class="form-control" name="email" required placeholder="inserisci l'email">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="password" [(ngModel)]="registerData.password" class="form-control" name="password" required placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="w-100 btn btn-lg text-white" (click)="signUp()">Registrati</button>
+  <hr class="my-4">
+  <small class="text-white">Facendo clic su registrati, accetti i termini di utilizzo.</small>
 </form>

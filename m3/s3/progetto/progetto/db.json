@@ -61,6 +61,20 @@
       "firstName": "dario",
       "lastName": "cantini",
       "id": 9
+    },
+    {
+      "email": "sara@dorce.it",
+      "password": "$2a$10$SpPOJD2y3COnq.rWBZgrc.NFxW3KlDGVeU/c0XNYB0ZVyBYLl8Nda",
+      "firstName": "sara",
+      "lastName": "porricino",
+      "id": 10
+    },
+    {
+      "email": "rosa@rosa.it",
+      "password": "$2a$10$rSXyy/.si0lwvf8H75gdQOKISXsPmWbbJgvQ6SEgnJEf2ixYFz06S",
+      "firstName": "rosa",
+      "lastName": "sorpreso",
+      "id": 11
     }
   ],
   "movies-popular": [
@@ -74,16 +88,6 @@
       ],
       "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
       "imgUrl": "https://picsum.photos/id/241/200/300"
-    },
-    {
-      "id": 7,
-      "title": "Fight Club",
-      "year": 1999,
-      "type": [
-        "Drama"
-      ],
-      "plot": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into something much, much more.",
-      "imgUrl": "https://picsum.photos/id/243/200/300"
     },
     {
       "id": 8,
@@ -201,6 +205,14 @@
       "type": "eori",
       "year": "2008",
       "id": 19
+    },
+    {
+      "title": "il signore anelli",
+      "plot": "anelli",
+      "imgUrl": "https://picsum.photos/200/300",
+      "type": "anelli",
+      "year": "2001",
+      "id": 20
     }
   ],
   "favorites": []

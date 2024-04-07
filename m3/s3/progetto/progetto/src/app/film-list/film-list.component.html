@@ -1,14 +1,14 @@
-<button class="btn btn-primary" routerLink="/addfilm">Aggiungi Film</button>
+<button class="btn addBtn text-white mb-5" routerLink="/addfilm">Aggiungi Film</button>
 <div class="row row-cols-4">
   <div class="col"*ngFor="let film of film">
     <div class="card text-bg-dark mb-3">
       <img [src]="film.imgUrl" class="card-img">
       <div class="card-img-overlay">
-        <h5 class="card-title text-black">{{film.title}}</h5>
-        <p class="card-text text-black">{{film.plot}}</p>
-        <p class="card-text text-black"><small>{{film.type}}</small></p>
+        <h5 class="card-title text-white">{{film.title}}</h5>
+        <p class="card-text text-white">{{film.plot}}</p>
+        <p class="card-text text-white"><small>{{film.type}}</small></p>
         <button routerLink="/editfilm" class="btn btn-success">modifica</button>
-        <button (click)="deleteMovie(film.id)" class="btn btn-primary">elimina</button>
+        <button (click)="deleteMovie(film.id)" class="btn btn-danger">elimina</button>
       </div>
     </div>
   </div>

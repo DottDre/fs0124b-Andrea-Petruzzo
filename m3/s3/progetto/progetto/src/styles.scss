@@ -2,3 +2,8 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+body{
+  background: rgb(66,10,111);
+  background: linear-gradient(0deg, rgba(66,10,111,1) 6%, rgba(144,95,233,1) 62%, rgba(158,106,254,1) 79%);
+  min-height: 100vh;
+}
