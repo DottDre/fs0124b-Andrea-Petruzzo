@@ -1,8 +1,8 @@
 <div *ngIf="!isUserLoggedIn" class="div text-center">
   <h1 class=" mb-5 mt-5 text-white">Benvenuto nella tua bacheca di film personalizzabile</h1>
-  <p>Accedi o registrati per poter vedere la tua lista di film. Dove potrai aggiungere, eliminiare e modificare la tua lista. Potrai anche scegliere i tuoi film preferiti e salvari sulla tua pagina profilo personale!!!</p>
-  <button routerLink="/auth/login" class="btn viola text-white">Accedi</button>
-  <button routerLink="/auth/register" class="btn viola ms-3 text-white">Registrati</button>
+  <p class="bold">Accedi o registrati per poter vedere la tua lista di film. Dove potrai aggiungere, eliminiare e modificare(non funziona) la tua lista. Potrai anche scegliere i tuoi film preferiti(purtoppo non ci sono riuscito) e salvari sulla tua pagina profilo personale!!!</p>
+  <button routerLink="/auth/login" class="btn viola text-white border">Accedi</button>
+  <button routerLink="/auth/register" class="btn viola ms-3 text-white border">Registrati</button>
 </div>
 <div *ngIf="isUserLoggedIn" class="div text-center">
   <h2>

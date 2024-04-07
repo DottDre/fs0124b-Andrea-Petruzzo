@@ -1,14 +1,7 @@
 .addBtn{
   background-color:  #6E2CF4;
 }
-.card-img{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
-  background-position: center center;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 200px auto;
-  margin: 0;
+.card-img-overlay{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0.8715861344537815) 40%, rgba(255,255,255,0.3113620448179272) 92%);
 }

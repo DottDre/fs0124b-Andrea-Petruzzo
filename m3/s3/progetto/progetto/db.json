@@ -79,28 +79,6 @@
   ],
   "movies-popular": [
     {
-      "id": 5,
-      "title": "The Matrix",
-      "year": 1999,
-      "type": [
-        "Action",
-        "Sci-Fi"
-      ],
-      "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-      "imgUrl": "https://picsum.photos/id/241/200/300"
-    },
-    {
-      "id": 8,
-      "title": "Goodfellas",
-      "year": 1990,
-      "type": [
-        "Crime",
-        "Drama"
-      ],
-      "plot": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
-      "imgUrl": "https://picsum.photos/id/244/200/300"
-    },
-    {
       "id": 9,
       "title": "Inglourious Basterds",
       "year": 2009,
@@ -181,38 +159,6 @@
       ],
       "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
       "imgUrl": "https://picsum.photos/id/252/200/300"
-    },
-    {
-      "title": "forxa",
-      "plot": "roma",
-      "imgUrl": "https://picsum.photos/200/300",
-      "type": "daje",
-      "year": "1927",
-      "id": 17
-    },
-    {
-      "title": "avengers",
-      "plot": "eroi",
-      "imgUrl": "https://picsum.photos/200/300",
-      "type": "eroi",
-      "year": "2012",
-      "id": 18
-    },
-    {
-      "title": "ironman",
-      "plot": "iornma",
-      "imgUrl": "https://picsum.photos/200/300",
-      "type": "eori",
-      "year": "2008",
-      "id": 19
-    },
-    {
-      "title": "il signore anelli",
-      "plot": "anelli",
-      "imgUrl": "https://picsum.photos/200/300",
-      "type": "anelli",
-      "year": "2001",
-      "id": 20
     }
   ],
   "favorites": []
