@@ -24,12 +24,4 @@ export class FilmListComponent {
     this.filmSvc.deleteMovie(id).subscribe()
   }
 
-  edit(){
-    this.filmSvc.editMovie(this.modificaFilm)
-    .subscribe(data =>{
-
-      this.router.navigate(['/film-list'])
-    })
-  }
-
 }
