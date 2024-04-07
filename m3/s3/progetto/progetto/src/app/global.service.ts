@@ -50,14 +50,17 @@ export class GlobalService {
   }
   addMovie(newMovie: Partial<Movies>){
     return this.http.post<Movies>(this.filmUrl,newMovie)
+    .pipe(tap(() => {
+      this.getAllMovies().subscribe(movie => this.filmSubject.next(movie))
+    }))
+  }
+  editMovie(newMovie: Partial<Movies>){
+    return this.http.put<Movies>(this.filmUrl,newMovie)
+    .pipe(tap(() => {
+      this.getAllMovies().subscribe(movie => this.filmSubject.next(movie))
+    }))
   }
   getAllUsers(){
     return this.http.get<Users[]>(this.userUrl)
-  }
-
-  updateUsersList(): void {
-    this.getAllUsers().subscribe(users => {
-      this.userSubject.next(users);
-    });
   }
 }

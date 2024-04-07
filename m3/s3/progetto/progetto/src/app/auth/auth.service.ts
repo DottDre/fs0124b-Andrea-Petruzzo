@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { environment } from '../../environments/environment.development';
 import { Login } from '../models/login';
 import { JwtHelperService } from '@auth0/angular-jwt';
+import { GlobalService } from '../global.service';
 
 type AccessData = {
   accessToken:string,
@@ -32,7 +33,8 @@ export class AuthService {
 
   constructor(
     private http:HttpClient,
-    private router:Router
+    private router:Router,
+    private globalvc: GlobalService
     ) {
 
       this.restoreUser()
@@ -45,6 +47,9 @@ export class AuthService {
 
   register(newUser:Partial<Users>):Observable<AccessData>{
     return this.http.post<AccessData>(this.registerUrl,newUser)
+    .pipe(tap(() => {
+      this.globalvc.getAllUsers().subscribe(users => this.globalvc.userSubject.next(users))
+    }))
   }
 
   login(loginData:Login):Observable<AccessData>{

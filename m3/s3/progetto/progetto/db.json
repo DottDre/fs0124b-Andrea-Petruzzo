@@ -47,6 +47,20 @@
       "firstName": "antonio",
       "lastName": "schipani",
       "id": 7
+    },
+    {
+      "email": "fran@nat.it",
+      "password": "$2a$10$qfXV2Nh84Y0QTc6hi2rlw.KKY6GmiEImft1SW/YH8frK9mnzfnWLG",
+      "firstName": "franz",
+      "lastName": "natazrio",
+      "id": 8
+    },
+    {
+      "email": "presidente@daje.it",
+      "password": "$2a$10$AyMdH0LhfEXBAaI9FwZOS.j6.AwP7PoqJTVpcFuhlFJkEIeXn90uW",
+      "firstName": "dario",
+      "lastName": "cantini",
+      "id": 9
     }
   ],
   "movies-popular": [
@@ -165,23 +179,28 @@
       "imgUrl": "https://picsum.photos/id/252/200/300"
     },
     {
-      "id": 17,
-      "title": "The Godfather: Part II",
-      "year": 1974,
-      "type": [
-        "Crime",
-        "Drama"
-      ],
-      "plot": "The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on his crime syndicate stretching from Lake Tahoe, Nevada to pre-revolution 1958 Cuba.",
-      "imgUrl": "https://picsum.photos/id/253/200/300"
+      "title": "forxa",
+      "plot": "roma",
+      "imgUrl": "https://picsum.photos/200/300",
+      "type": "daje",
+      "year": "1927",
+      "id": 17
     },
     {
-      "title": "star wars",
-      "plot": "spazio",
+      "title": "avengers",
+      "plot": "eroi",
       "imgUrl": "https://picsum.photos/200/300",
-      "type": "spazio",
-      "year": "1978",
+      "type": "eroi",
+      "year": "2012",
       "id": 18
+    },
+    {
+      "title": "ironman",
+      "plot": "iornma",
+      "imgUrl": "https://picsum.photos/200/300",
+      "type": "eori",
+      "year": "2008",
+      "id": 19
     }
   ],
   "favorites": []
