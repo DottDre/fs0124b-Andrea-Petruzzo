@@ -33,11 +33,13 @@ const routes: Routes = [
   },
   { path: 'addfilm',
     loadChildren: () =>
-      import('./addfilm/addfilm.module').then(m => m.AddfilmModule)
+      import('./addfilm/addfilm.module').then(m => m.AddfilmModule),
+    canActivate:[GuardGuard]
   },
   { path: 'editfilm',
     loadChildren: () =>
-      import('./editfilm/editfilm.module').then(m => m.EditfilmModule)
+      import('./editfilm/editfilm.module').then(m => m.EditfilmModule),
+    canActivate:[GuardGuard]
   },
 ];
 
