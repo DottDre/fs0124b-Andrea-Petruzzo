@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MovieService } from '../movie.service';
+import { GlobalService} from '../global.service';
 import { Users } from '../models/users';
 
 @Component({
@@ -11,7 +11,7 @@ export class UserRegisteredComponent {
 
   users: Users[]=[];
 
-  constructor(private usersSvc: MovieService) { }
+  constructor(private usersSvc: GlobalService) { }
 
   ngOnInit(): void {
     this.usersSvc.$users.subscribe(users => {

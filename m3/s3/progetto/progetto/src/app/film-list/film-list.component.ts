@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Movies } from '../models/movies';
-import { MovieService} from '../movie.service';
+import { GlobalService} from '../global.service';
 
 @Component({
   selector: 'app-film-list',
@@ -11,7 +11,7 @@ export class FilmListComponent {
 
   film: Movies[]=[];
 
-  constructor(private filmSvc: MovieService) { }
+  constructor(private filmSvc: GlobalService) { }
 
   ngOnInit(): void {
     this.filmSvc.$film.subscribe(film => {

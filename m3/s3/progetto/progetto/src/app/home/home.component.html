@@ -1,7 +1,14 @@
-<p>home works!</p>
-<div>
-
+<div *ngIf="!isUserLoggedIn">
+  <h1>Benvenuto nella tua bacheca di film personalizzabile</h1>
+  <p>Accedi o registrati per poter vedere la tua lista di film. Dove potrai aggiungere, eliminiare e modificare la tua lista. Potrai anche scegliere i tuoi film preferiti e salvari sulla tua pagina profilo personale!!!</p>
+  <button routerLink="/auth/login" class="btn btn-success">login</button>
+  <button routerLink="/auth/register" class="btn btn-success">registrati</button>
 </div>
-<div>
-
+<div *ngIf="isUserLoggedIn">
+  <h2>
+    benvenuto {{user?.firstName}}
+  </h2>
 </div>
+
+
+

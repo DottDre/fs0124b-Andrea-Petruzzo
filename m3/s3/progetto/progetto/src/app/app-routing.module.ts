@@ -31,6 +31,7 @@ const routes: Routes = [
       import('./auth/auth.module').then(m => m.AuthModule),
     canActivate:[GuestGuard]
   },
+  { path: 'addfilm', loadChildren: () => import('./addfilm/addfilm.module').then(m => m.AddfilmModule) },
 ];
 
 @NgModule({

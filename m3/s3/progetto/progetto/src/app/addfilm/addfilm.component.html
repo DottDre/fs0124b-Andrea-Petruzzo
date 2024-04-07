@@ -1,0 +1,28 @@
+<h1>Registrati</h1>
+
+<form>
+
+
+  <input type="text" name="titolo"
+  [(ngModel)]="aggiungiFilm.title"
+  class="form-control" placeholder="titolo">
+
+  <input type="text" name="trama"
+  [(ngModel)]="aggiungiFilm.plot"
+  class="form-control" placeholder="trama">
+
+  <input type="text" name="img"
+  [(ngModel)]="aggiungiFilm.imgUrl"
+  class="form-control" placeholder="immagine">
+
+  <input type="text" name="genere"
+  [(ngModel)]="aggiungiFilm.type"
+  class="form-control" placeholder="genere">
+
+  <input type="text" name="anno"
+  [(ngModel)]="aggiungiFilm.year"
+  class="form-control" placeholder="anno">
+
+  <button (click)="add()" class="btn btn-success">Aggiungi</button>
+
+</form>

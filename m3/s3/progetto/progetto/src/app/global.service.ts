@@ -8,7 +8,7 @@ import { Users } from './models/users';
 @Injectable({
   providedIn: 'root'
 })
-export class MovieService {
+export class GlobalService {
 
   filmUrl = environment.filmUrl;
 
@@ -29,7 +29,7 @@ export class MovieService {
   constructor(private http:HttpClient){
     this.getAllMovies().subscribe(data => {
       this.filmSubject.next(data)
-      this.filmArr = data;
+      this.filmArr = data
     })
     this.getAllUsers().subscribe(data => {
       this.userSubject.next(data)
@@ -47,6 +47,9 @@ export class MovieService {
       this.filmArr = this.filmArr.filter(p => p.id != id)
       this.filmSubject.next(this.filmArr)
     }))
+  }
+  addMovie(newMovie: Partial<Movies>){
+    return this.http.post<Movies>(this.filmUrl,newMovie)
   }
   getAllUsers(){
     return this.http.get<Users[]>(this.userUrl)

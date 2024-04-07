@@ -26,55 +26,30 @@
       "firstName": "antonio",
       "lastName": "schipani",
       "id": 4
+    },
+    {
+      "email": "luca@dipe.it",
+      "password": "$2a$10$4AczsT7812NvU5Kt.awR4eWdy.eelbBFiyqjwGBWASxwLCyRnAqam",
+      "firstName": "luca",
+      "lastName": "dipe",
+      "id": 5
+    },
+    {
+      "email": "andre@pet.it",
+      "password": "$2a$10$nX6Fj4aGoZ97qE9guum6KeFBrZ9iEWaj1TQ2nXuXUEnmYx5uoVwIW",
+      "firstName": "andrea",
+      "lastName": "petruzzo",
+      "id": 6
+    },
+    {
+      "email": "anto@schi.it",
+      "password": "$2a$10$43mbWAWZ/9IP4fO1155vIOERDs0e0c6Luz9q8tkRaWxmaoaWKawz2",
+      "firstName": "antonio",
+      "lastName": "schipani",
+      "id": 7
     }
   ],
   "movies-popular": [
-    {
-      "id": 1,
-      "title": "Inception",
-      "year": 2010,
-      "type": [
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-      ],
-      "plot": "A thief who enters the subconscious of his targets to extract information must plant an idea to compromise his last job.",
-      "imgUrl": "https://picsum.photos/id/237/200/300"
-    },
-    {
-      "id": 2,
-      "title": "The Shawshank Redemption",
-      "year": 1994,
-      "type": [
-        "Drama",
-        "Crime"
-      ],
-      "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-      "imgUrl": "https://picsum.photos/id/238/200/300"
-    },
-    {
-      "id": 3,
-      "title": "The Dark Knight",
-      "year": 2008,
-      "type": [
-        "Action",
-        "Crime",
-        "Drama"
-      ],
-      "plot": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
-      "imgUrl": "https://picsum.photos/id/239/200/300"
-    },
-    {
-      "id": 4,
-      "title": "Pulp Fiction",
-      "year": 1994,
-      "genre": [
-        "Crime",
-        "Drama"
-      ],
-      "plot": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-      "imgUrl": "https://picsum.photos/id/240/200/300"
-    },
     {
       "id": 5,
       "title": "The Matrix",
@@ -85,17 +60,6 @@
       ],
       "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
       "imgUrl": "https://picsum.photos/id/241/200/300"
-    },
-    {
-      "id": 6,
-      "title": "Forrest Gump",
-      "year": 1994,
-      "genre": [
-        "Drama",
-        "Romance"
-      ],
-      "plot": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
-      "imgUrl": "https://picsum.photos/id/242/200/300"
     },
     {
       "id": 7,
@@ -178,18 +142,6 @@
       "imgUrl": "https://picsum.photos/id/249/200/300"
     },
     {
-      "id": 14,
-      "title": "The Green Mile",
-      "year": 1999,
-      "type": [
-        "Crime",
-        "Drama",
-        "Fantasy"
-      ],
-      "plot": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
-      "imgUrl": "https://picsum.photos/id/250/200/300"
-    },
-    {
       "id": 15,
       "title": "The Silence of the Lambs",
       "year": 1991,
@@ -224,16 +176,12 @@
       "imgUrl": "https://picsum.photos/id/253/200/300"
     },
     {
-      "id": 18,
-      "title": "The Dark Knight Rises",
-      "year": 2012,
-      "type": [
-        "Action",
-        "Adventure",
-        "Thriller"
-      ],
-      "plot": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
-      "imgUrl": "https://picsum.photos/id/254/200/300"
+      "title": "star wars",
+      "plot": "spazio",
+      "imgUrl": "https://picsum.photos/200/300",
+      "type": "spazio",
+      "year": "1978",
+      "id": 18
     }
   ],
   "favorites": []
