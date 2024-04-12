@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "email": "antonio@email.it",
+      "password": "$2a$10$DKRbKjF5C8m0KdhHISkcs.Pvz//LenQKgKAM6HzR8sJMG0AI7YXVS",
+      "name": "antonio",
+      "lastName": "schipani",
+      "favourites": [
+        10,
+        11,
+        2,
+        1,
+        3
+      ],
+      "id": 1
+    },
+    {
+      "email": "danilo@email.it",
+      "password": "$2a$10$F58W4qTK6ke5QYKMzQKQWuSz6AXssP1.lra8xCQ6p3fMMh2eO214K",
+      "name": "danilo",
+      "lastName": "nebulosi",
+      "favourites": [
+        3,
+        5,
+        8,
+        7
+      ],
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "title": "ciao ",
+      "category": "sport",
+      "content": "forza roma",
+      "authorId": 1,
+      "likes": 16,
+      "id": 2
+    },
+    {
+      "title": "forza roma",
+      "category": "sport",
+      "content": "la roma è la migliore milan brutto",
+      "authorId": 1,
+      "likes": 1,
+      "id": 3
+    }
+  ]
+}

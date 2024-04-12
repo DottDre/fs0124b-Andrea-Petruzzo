@@ -79,18 +79,6 @@
   ],
   "movies-popular": [
     {
-      "id": 9,
-      "title": "Inglourious Basterds",
-      "year": 2009,
-      "type": [
-        "Adventure",
-        "Drama",
-        "War"
-      ],
-      "plot": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
-      "imgUrl": "https://picsum.photos/200/300"
-    },
-    {
       "id": 10,
       "title": "The Godfather",
       "year": 1972,
