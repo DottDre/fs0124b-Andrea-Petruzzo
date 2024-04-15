@@ -10,6 +10,8 @@ public class Main {
         int m = a*b ;
         return m;
     }
+}
+
 
 
 
