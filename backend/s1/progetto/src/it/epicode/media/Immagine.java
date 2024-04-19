@@ -19,7 +19,7 @@ public class Immagine extends EleMultimediale implements MetodiVisibili {
         for (int i = 0; i < this.getLuminosita(); i++){
             System.out.print("*");
         }
-
+        System.out.println(".");
     }
 
 

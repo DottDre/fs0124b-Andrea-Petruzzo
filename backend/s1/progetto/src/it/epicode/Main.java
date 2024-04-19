@@ -27,5 +27,7 @@ public class Main {
 
         labarbadiFred.aumentaLuminosita();
         labarbadiFred.show();
+        labarbadiFred.aumentaLuminosita();
+        labarbadiFred.show();
     }
 }
