@@ -1,36 +1,32 @@
 package it.epicode.media;
 
-public class Video extends EleRiproducibile implements MetodiVisibili{
-    private int luminosita;
+import it.epicode.interfacce.MetodiVisibili;
 
-    public Video(String titolo, int durata){
+public class Video extends EleRiproducibile implements MetodiVisibili {
+    private int luminosita = 5; // Inizializza la luminosità a 5
+
+    public Video(String titolo, int durata){ // Costruttore che imposta titolo e durata
         this.setTitolo(titolo);
         this.setDurata(durata);
-        this.setLuminosita(50);
-        this.setVolume(50);
     }
 
-    public int getLuminosita() {
+    public int getLuminosita() { // Restituisce la luminosità attuale
         return luminosita;
     }
 
-    public void setLuminosita(int luminosita) {
-        this.luminosita = luminosita;
-    }
-
     @Override
-    public void play() {
-        super.play();
+    public void play() { // Riproduco il video mostrando il titolo
+        super.play();// Chiamo il metodo play della classe padre
         for (int i = 0; i < this.getDurata(); i++){
 
-            System.out.print(this.getTitolo());
+            System.out.print(this.getTitolo());// Mostro il titolo
 
-            for (int j = 0; j < this.getVolume(); j++){
+            for (int j = 0; j < this.getVolume(); j++){ // Mostro ! per il volume
 
                 System.out.print("!");
 
             }
-            for (int z = 0; z < this.getLuminosita(); z++){
+            for (int z = 0; z < this.getLuminosita(); z++){ // Mostro * per la luminosità
 
                 System.out.print("*");
             }
@@ -39,8 +35,8 @@ public class Video extends EleRiproducibile implements MetodiVisibili{
     }
 
     @Override
-    public void aumentaLuminosita() {
-        if (this.getLuminosita()<100){
+    public void aumentaLuminosita() {  // Aumento la luminosità, se possibile
+        if (this.getLuminosita()<10){
             luminosita ++;
         }else{
             System.out.println("Luminosità gia al massimo");
@@ -48,7 +44,7 @@ public class Video extends EleRiproducibile implements MetodiVisibili{
     }
 
     @Override
-    public void diminuisciLuminosita() {
+    public void diminuisciLuminosita() { // Diminuisco la luminosità, se possibile
         if (this.getLuminosita()>0){
             luminosita --;
         }else{

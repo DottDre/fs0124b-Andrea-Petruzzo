@@ -1,4 +1,4 @@
-package it.epicode.media;
+package it.epicode.interfacce;
 
 public interface MetodiVisibili {
 
