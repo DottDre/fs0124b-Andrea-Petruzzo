@@ -12,6 +12,8 @@ public interface LibreriaService {
 
     Catalogo trovaISBN(long ISBN);
 
+    Catalogo trovaAutore(String autore);
+
     Catalogo trovaAnno(int anno);
 
     ArrayList<Catalogo> prendiTutto();

@@ -4,7 +4,7 @@ public class Libri extends Catalogo{
     private String autore;
     private String genere;
 
-    public Libri(String titolo, int ISBN, int anno, int pagine) {
+    public Libri(String titolo, long ISBN, int anno, int pagine, String autore, String genere) {
         super(titolo, ISBN, anno, pagine);
         this.autore = autore;
         this.genere = genere;
