@@ -17,15 +17,13 @@ public class Main {
         int choice = 0;
         do {;
             System.out.println("|      Catalogo della Biblioteca      |");
-            System.out.println("+-------------------------------------+");
-            System.out.println("| 1 - Cerca per ISBN                  |");
+            System.out.println("| 1 - ISBN                  |");
             System.out.println("| 2 - Cerca per anno di pubblicazione |");
             System.out.println("| 3 - Cerca per autore                |");
             System.out.println("| 4 - Elimina per ISBN                |");
             System.out.println("| 5 - Visualizza tutti gli articoli   |");
             System.out.println("| 6 - Aggiungi una pubblicazione      |");
             System.out.println("| 7 - Esci                            |");
-            System.out.println("+-------------------------------------+");
             System.out.print("Seleziona un'opzione: ");
 
             try {
