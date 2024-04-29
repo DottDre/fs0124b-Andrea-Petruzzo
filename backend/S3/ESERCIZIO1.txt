@@ -1,2 +1,5 @@
 SELECT * FROM epicode.clienti WHERE nome = 'Mario';
 SELECT nome, cognome FROM epicode.clienti WHERE "annoDiNascita" = 1982
+SELECT * FROM epicode.fatture WHERE iva = 20 ;
+SELECT * FROM epicode.prodotti WHERE EXTRACT (YEAR FROM "dataAttivazione") = 2017
+SELECT * FROM epicode.fatture WHERE importo < 1000s
