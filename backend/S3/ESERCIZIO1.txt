@@ -1,0 +1,2 @@
+SELECT * FROM epicode.clienti WHERE nome = 'Mario';
+SELECT nome, cognome FROM epicode.clienti WHERE "annoDiNascita" = 1982
