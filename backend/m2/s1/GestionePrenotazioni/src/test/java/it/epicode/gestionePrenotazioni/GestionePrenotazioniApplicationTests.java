@@ -1,4 +1,4 @@
-package it.epicode.GestionePrenotazioni;
+package it.epicode.gestionePrenotazioni;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
