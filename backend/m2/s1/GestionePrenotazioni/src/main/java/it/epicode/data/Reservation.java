@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder(setterPrefix = "with")
 public class Reservation extends BaseEntity {
-    @OneToOne
+    @ManyToOne
     private Location location;
     @ManyToOne
     private User user;
