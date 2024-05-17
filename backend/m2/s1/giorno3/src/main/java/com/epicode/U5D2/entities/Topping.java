@@ -22,4 +22,9 @@ public class Topping extends Item {
 				", price=" + price +
 				'}';
 	}
+
+	@Override
+	public int getCalories() {
+		return 0;
+	}
 }
