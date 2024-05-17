@@ -1,20 +1,18 @@
 package it.epicode.data;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.*;
 
-
-@EqualsAndHashCode(callSuper = true)
 @Entity
+@EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(setterPrefix = "with")
 public class Building extends BaseEntity {
-    @Column(name = "name")
     private String Name;
     private String address;
     private String city;
+    @ManyToOne
     private User user;
 }

@@ -1,4 +1,7 @@
 package it.epicode.repositories;
 
-public interface ReservationRepository {
+import it.epicode.data.Reservation;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ReservationRepository extends JpaRepository<Reservation, Long> {
 }

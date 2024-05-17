@@ -1,11 +1,13 @@
 package it.epicode.data;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
-@EqualsAndHashCode(callSuper = true)
+import java.util.List;
+
+
 @Entity
+@EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,9 +15,11 @@ import lombok.*;
 public class Location extends BaseEntity {
     private String uniqueCode;
     private String description;
+    @Enumerated(EnumType.STRING)
     private Type type;
     private Long maxOccupants;
     @ManyToOne
+    @JoinColumn(name = "building_id")
     private Building building;
     private boolean free;
 }

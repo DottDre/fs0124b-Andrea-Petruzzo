@@ -8,8 +8,8 @@ import lombok.*;
 
 import java.time.LocalDate;
 
-@EqualsAndHashCode(callSuper = true)
 @Entity
+@EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,5 +20,5 @@ public class Reservation extends BaseEntity {
     @ManyToOne
     private User user;
     private LocalDate bookingDate;
-    private LocalDate expiryDate;
+
 }
