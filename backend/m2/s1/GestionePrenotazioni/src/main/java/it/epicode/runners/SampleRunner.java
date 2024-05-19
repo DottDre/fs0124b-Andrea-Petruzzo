@@ -37,7 +37,7 @@ public class SampleRunner implements CommandLineRunner {
 
         try {
             makeReservation(user, location, date);
-            System.out.println("Prenotazione effettuata con successo per l'utente " + user.getUsername());
+            System.out.println("Prenotazione effettuata con successo" + user.getUsername());
         } catch (Exception e) {
             System.err.println("Impossibile effettuare la prenotazione: " + e.getMessage());
         }
@@ -81,7 +81,7 @@ public class SampleRunner implements CommandLineRunner {
 
     public  void makeReservation(User user, Location location, LocalDate date) throws Exception {
         if (!isStationAvailable(location, date)) {
-            throw new Exception("La postazione non è disponibile per quella data.");
+            throw new Exception("La postazione non è disponibile.");
         }
 
         if (hasReservationForDate(user, date)) {
@@ -115,9 +115,9 @@ public class SampleRunner implements CommandLineRunner {
             LocalDate date = LocalDate.now().plusDays(random.nextInt(30));
             try {
                 makeReservation(user, location1, date);
-                System.out.println("Prenotazione effettuata con successo per l'utente " + user.getUsername() + " per la postazione " + location1.getUniqueCode());
+                System.out.println("Prenotazione effettuata con successo  " + user.getUsername() + " per la postazione " + location1.getUniqueCode());
             } catch (Exception e) {
-                System.err.println("Impossibile effettuare la prenotazione per l'utente " + user.getUsername() + ": " + e.getMessage());
+                System.err.println("Impossibile effettuare la prenotazione " + user.getUsername() + ": " + e.getMessage());
             }
         }
     }
