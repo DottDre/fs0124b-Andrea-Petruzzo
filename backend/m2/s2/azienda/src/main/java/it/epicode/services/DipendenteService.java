@@ -13,7 +13,7 @@ public interface DipendenteService {
 
         Dipendente save(Dipendente dipendente);
 
-        Dipendente update(Long dipendenteId, Dipendente dipendente);
+        Optional<Dipendente> update(Long dipendenteId, Dipendente dipendente);
 
-        Dipendente delete(Long dipendenteId);
+        Optional<Dipendente> delete(Long dipendenteId);
 }

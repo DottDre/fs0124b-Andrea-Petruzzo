@@ -13,11 +13,13 @@ public interface DispositivoService {
 
     Dispositivo save(Dispositivo dispositivo);
 
-    Dispositivo update(Long dispositivoId, Dispositivo dispositivo);
+    Optional<Dispositivo> update(Long dispositivoId, Dispositivo dispositivo);
 
-    Dispositivo delete(Long dispositivoId);
+    Optional<Dispositivo> delete(Long dispositivoId);
 
     Dispositivo assegna(Long dispositivoId,Long dipendenteId);
+
+    Dispositivo rimuoviDispositivoAssegnato(Long dispositivoId,Long dipendenteId);
 
 
 }
