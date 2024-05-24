@@ -1,6 +1,8 @@
 package it.epicode.services;
 
 import it.epicode.data.Dispositivo;
+import it.epicode.data.StatoDispositivo;
+import it.epicode.repositories.DipendenteRepository;
 import it.epicode.repositories.DispositivoRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,9 @@ public class DispositivoServiceImpl implements DispositivoService{
 
     @Autowired
     DispositivoRepository dispositivi;
+
+    @Autowired
+    DipendenteRepository dipendenti;
 
 
     @Override
@@ -79,11 +84,27 @@ public class DispositivoServiceImpl implements DispositivoService{
 
     @Override
     public Dispositivo assegna(Long dispositivoId, Long dipendenteId) {
-        return null;
+        var dis = dispositivi.findById(dispositivoId)
+                .orElseThrow(()-> new RuntimeException("dispositivo non trovato"));
+        if (dis.getStatoDispositivo() != StatoDispositivo.DISPONIBILE){
+            throw new RuntimeException("Il dispositivo non è disponibile per l'assegnazione");
+        }
+        var dip = dipendenti.findById(dipendenteId)
+                .orElseThrow(()-> new RuntimeException("dipendente non trovato"));
+        dis.setDipendente(dip);
+        dis.setStatoDispositivo(StatoDispositivo.ASSEGNATO);
+        return dispositivi.save(dis);
     }
 
     @Override
     public Dispositivo rimuoviDispositivoAssegnato(Long dispositivoId, Long dipendenteId) {
-        return null;
+       var dis = dispositivi.findById(dispositivoId)
+               .orElseThrow(()->new RuntimeException("dispotivo non trovato"));
+       if (dis.getDipendente() == null || !dis.getDipendente().getId().equals(dipendenteId)){
+           throw new RuntimeException("il dispositivo non puo essere assegnato allo specifico dipendente");
+       }
+       dis.setDipendente(null);
+       dis.setStatoDispositivo(StatoDispositivo.DISPONIBILE);
+       return dispositivi.save(dis);
     }
 }

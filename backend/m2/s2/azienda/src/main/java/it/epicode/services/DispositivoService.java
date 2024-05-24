@@ -19,7 +19,7 @@ public interface DispositivoService {
 
     Dispositivo assegna(Long dispositivoId,Long dipendenteId);
 
-    Dispositivo rimuoviDispositivoAssegnato(Long dispositivoId,Long dipendenteId);
+    Dispositivo rimuoviDispositivoAssegnato(Long dispositivoId, Long dipendenteId);
 
 
 }
