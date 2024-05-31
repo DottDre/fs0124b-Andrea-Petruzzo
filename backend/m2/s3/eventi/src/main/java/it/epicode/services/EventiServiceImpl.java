@@ -49,6 +49,7 @@ public class EventiServiceImpl implements EventiService{
                     .withData(eve.getData())
                     .withDescrizione(eve.getDescrizione())
                     .withPostiDisponibili(eve.getPostiDisponibili())
+                    .withLuogo(eve.getLuogo())
                     .withPostiPrenotati(eve.getPostiPrenotati())
                     .withTitolo(eve.getTitolo())
                     .build();

@@ -17,6 +17,8 @@ public class Eventi extends EntityBase{
 
     private String descrizione;
 
+    private String luogo;
+
     private String data;
 
     private Integer postiDisponibili;
