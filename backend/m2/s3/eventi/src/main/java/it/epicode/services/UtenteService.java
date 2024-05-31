@@ -1,5 +1,8 @@
 package it.epicode.services;
 
+import it.epicode.dto.LoginResponseDto;
+import it.epicode.dto.RegisterUserDto;
+import it.epicode.dto.RegisteredUserDto;
 import it.epicode.entities.Utente;
 
 import java.util.List;
@@ -16,4 +19,10 @@ public interface UtenteService {
     Optional<Utente> update(Long utenteId, Utente utente);
 
     Optional<Utente> delete(Long utenteId);
+
+    RegisteredUserDto register(RegisterUserDto user);
+
+    Optional<LoginResponseDto> login(String username, String password);
+
+    Optional<RegisteredUserDto> get(long id);
 }
