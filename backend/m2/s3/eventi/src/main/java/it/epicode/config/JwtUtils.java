@@ -54,8 +54,8 @@ public class JwtUtils {
     public String getUsernameFromToken(String token) {
         byte[] keyBytes = securityKey.getBytes();
         SecretKey key = Keys.hmacShaKeyFor(keyBytes);
-        var username = Jwts.parser() //
-                .verifyWith(key).build() //
+        var username = Jwts.parser()
+                .verifyWith(key).build()
                 .parseSignedClaims(token).getPayload().getSubject();
         return username;
     }

@@ -11,7 +11,6 @@ import it.epicode.exceptions.PersistEntityException;
 import it.epicode.repositories.RuoloRepository;
 import it.epicode.repositories.UtenteRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;

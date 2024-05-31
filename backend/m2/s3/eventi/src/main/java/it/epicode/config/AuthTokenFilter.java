@@ -27,8 +27,7 @@ public class AuthTokenFilter extends OncePerRequestFilter {
                                     HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         try {
             log.info("Processing AuthTokenFilter");
-            // legge lo header
-            // Authorization: Bearer TOKEN
+
             var header = request.getHeader("Authorization");
             if (header != null && header.startsWith("Bearer")) {
                 var token = header.substring(7);
@@ -38,11 +37,10 @@ public class AuthTokenFilter extends OncePerRequestFilter {
                 var details = userDetailsService.loadUserByUsername(username);
                 log.info("Details: {}", details);
 
-                // a questo punto l'utente è stato completamente individuato
-                // lo devo solo SCRIVERE NEL CONTESTO DI SICUREZZA
+
                 var auth = new UsernamePasswordAuthenticationToken(details, null, details.getAuthorities());
                 auth.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
-                // INTEGRO IL MIO SISTEMA DI AUTENTICAZIONE NEL CONTESTO SPRING
+
                 SecurityContextHolder.getContext().setAuthentication(auth);
             }
 

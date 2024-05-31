@@ -12,21 +12,21 @@ public class BeansConfiguration {
     @Bean
     @Scope("singleton")
     Mapper<RegisterUserDto, Utente> mapRegisterUser2UserEntity() {
-        return (input) -> Utente.builder() //
-                .withNome(input.getNomeUtente()) //
-                .withPassword(input.getPassword()) //
-                .withEmail(input.getNomeUtente()) //
+        return (input) -> Utente.builder()
+                .withNome(input.getNomeUtente())
+                .withPassword(input.getPassword())
+                .withEmail(input.getNomeUtente())
                 .build();
     }
 
     @Bean
     @Scope("singleton")
     Mapper<Utente, RegisteredUserDto> mapUserEntity2RegisteredUser() {
-        return (input) -> RegisteredUserDto.builder() //
-                .withSoprannome(input.getNome()) //
-                .withId(input.getId()) //
-                .withNomeUtente(input.getNome()) //
-                .withRuolo(input.getRoles().stream().map(r -> r.getNome()).toList()) //
+        return (input) -> RegisteredUserDto.builder()
+                .withSoprannome(input.getNome())
+                .withId(input.getId())
+                .withNomeUtente(input.getNome())
+                .withRuolo(input.getRoles().stream().map(r -> r.getNome()).toList())
                 .build();
     }
 
